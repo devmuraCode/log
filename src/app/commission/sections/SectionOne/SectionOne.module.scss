@@ -1,0 +1,123 @@
+.wrapper {
+  padding: 5rem 0;
+
+  .content {
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+
+    .text {
+      width: 70%;
+      margin: 2rem auto;
+
+      p {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.86px;
+        text-align: center;
+        color: #696969;
+      }
+    }
+  }
+
+  .cardGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .card {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 12px;
+      border-bottom-left-radius: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: calc(50% - 0.5rem); // 2 карточки в ряд для планшетов
+      margin: 0;
+
+      .number {
+        background-color: #3b67f0;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+
+      .title {
+        padding: 1rem;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .text {
+      width: 90%;
+    }
+
+    .cardGroup {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .number {
+          font-size: 20px;
+          padding: 1rem 1.2rem;
+        }
+
+        .title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .text {
+      width: 95%;
+    }
+
+    .cardGroup {
+      .card {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .number {
+          font-size: 18px;
+          padding: 0.8rem 1rem;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

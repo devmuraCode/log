@@ -1,0 +1,109 @@
+.wrapper {
+  background: url(../../../../assets/downdocs.jpg) no-repeat center center / cover;
+  height: max-content;
+  padding: 5rem 0;
+
+  .content {
+    border: 1px solid #ffffff1a;
+    padding: 3rem 2rem;
+    border-radius: 40px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.1);
+
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      color: white;
+    }
+
+    .downcardGroup {
+      width: 100%;
+      max-width: 65%;
+      padding-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .downcard {
+      width: 100%;
+      max-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .inner {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-bottom: 1.5rem;
+
+        h3 {
+          font-family: Manrope;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27.32px;
+          color: white;
+          text-align: left;
+        }
+      }
+
+      button {
+        width: 70%;
+        background: #fff;
+        color: rgba(37, 99, 235, 1);
+      }
+    }
+  }
+
+  // Убираем фон на мобильных устройствах
+  @media (max-width: 768px) {
+    background: url(../../../../assets/downdocs.jpg) no-repeat center center / cover;
+    padding: 3rem 0;
+
+    .content {
+      padding: 2rem;
+      border: none;
+      backdrop-filter: none;
+      background: none;
+
+      h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .downcardGroup {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 2rem;
+      }
+
+      .downcard {
+        width: 100%;
+        max-width: 100%;
+
+        .inner {
+          flex-direction: column;
+          text-align: center;
+          gap: 1rem;
+
+          h3 {
+            font-size: 18px;
+          }
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

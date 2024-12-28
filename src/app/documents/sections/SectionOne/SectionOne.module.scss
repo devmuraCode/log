@@ -1,0 +1,62 @@
+.wrapper {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+
+  h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .individuals,
+    .legal {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .cardGroup {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px 0;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .content {
+      gap: 30px;
+    }
+
+    .individuals,
+    .legal {
+      gap: 16px;
+    }
+
+    .cardGroup {
+      grid-template-columns: 1fr !important; /* Одна колонка на мобильных устройствах */
+      gap: 16px; /* Уменьшение отступов между карточками */
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 5rem 0 0 0;
+    
+    h1 {
+        font-family: Manrope;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 43.71px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: black;
+        padding-bottom: 1rem;
+    }
+
+    .card_group {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки по умолчанию для больших экранов */
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки на планшетах */
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; /* 1 колонка на мобильных устройствах */
+            gap: 1.5rem;
+        }
+    }
+}

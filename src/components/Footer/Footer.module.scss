@@ -1,0 +1,144 @@
+.wrapper {
+  margin-top: 5rem;
+  background: #f1f1f1;
+  padding: 0 2rem;
+
+  .logo {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.17);
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; 
+    padding: 2rem;
+
+    p, li {
+      font-family: 'Manrope', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #696969;
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h3 {
+      font-family: 'Manrope', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #000;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .copyright {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+    text-align: center; /* Центрируем текст */
+    color: #696969;
+    padding: 1rem 0;
+  }
+
+  // Адаптивность
+  @media (max-width: 1024px) {
+    .content {
+      grid-template-columns: repeat(2, 1fr); /* На средних экранах 2 колонки */
+      gap: 1.5rem;
+      text-align: center; /* Центрируем текст на средних экранах */
+    }
+
+    .title {
+      grid-template-columns: 1fr;
+      justify-content: center;
+
+      h3 {
+        font-size: 22px; /* Уменьшаем шрифт заголовка на средних экранах */
+      }
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
+      padding: 1rem;
+      text-align: left; /* Выровняли текст по левому краю */
+    }
+
+    .title {
+      grid-template-columns: 1fr;
+      justify-content: flex-start; /* Выровняли заголовок по левому краю */
+      text-align: left; /* Выровняли текст заголовка по левому краю */
+
+      h3 {
+        font-size: 20px; /* Уменьшаем размер шрифта заголовка */
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .copyright {
+      font-size: 12px; /* Уменьшаем размер шрифта для копирайта */
+      padding: 0.5rem 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      padding: 1rem;
+      gap: 1rem;
+      text-align: left; /* Выровняли текст по левому краю */
+    }
+
+    .title {
+      h3 {
+        font-size: 18px; /* Еще меньше шрифт для заголовков на маленьких экранах */
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .copyright {
+      font-size: 12px;
+      padding: 0.5rem 0;
+    }
+  }
+}

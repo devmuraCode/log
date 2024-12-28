@@ -1,0 +1,68 @@
+.wrapper {
+  padding: 7rem 0;
+
+  h2 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .cardGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Изменяем направление на вертикальное для мобильных */
+      gap: 1.5rem; /* Увеличиваем расстояние между карточками */
+    }
+  }
+
+  .support_card {
+    height: auto; /* Делаем высоту автоматической для адаптивности */
+    border: 1px solid rgba(37, 99, 235, 1);
+    box-shadow: 14px 12px 0px -1px rgba(37, 99, 235, 1);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 70px;
+    margin-top: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Вертикальное расположение на мобильных */
+      padding: 1.5rem; /* Уменьшаем отступы */
+      text-align: center; /* Центрируем текст */
+      box-shadow: 8px 6px 0px -1px rgba(37, 99, 235, 1); /* Меньшая тень для мобильных */
+    }
+
+    h3 {
+      font-family: Manrope;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32.78px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+
+    .content_card {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        gap: 1rem; /* Добавляем расстояние между элементами */
+      }
+    }
+  }
+}

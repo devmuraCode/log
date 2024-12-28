@@ -1,0 +1,91 @@
+.wrapper {
+  background: url(../../../../assets/downdocs.jpg) no-repeat center center / cover;
+  height: max-content;
+  padding: 5rem 0;
+
+  .content {
+    border: 1px solid #ffffff1a;
+    padding: 3rem 1.5rem; // Добавил отступы для мобильных
+    border-radius: 40px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.1);
+
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: white;
+      margin-bottom: 2rem; // Добавил отступ снизу
+    }
+
+    .downcardGroup {
+      width: 65%;
+      padding-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      gap: 2rem; // Добавил зазор между карточками
+
+      @media (max-width: 768px) {
+        flex-direction: column; // Вертикальное расположение на мобильных
+        width: 100%; // На всю ширину экрана
+        padding-top: 2rem; // Уменьшил верхний отступ
+      }
+    }
+
+    .downcard {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        width: 100%; // Карточка занимает всю ширину на мобильных
+      }
+
+      .inner {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-bottom: 2rem;
+
+        @media (max-width: 480px) {
+          flex-direction: column; // Элементы располагаются вертикально на маленьких экранах
+          gap: 1rem; // Уменьшил зазор между элементами
+        }
+
+        h3 {
+          font-family: Manrope;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27.32px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: white;
+
+          @media (max-width: 480px) {
+            text-align: center; // Центрируем текст на маленьких экранах
+          }
+        }
+      }
+
+      button {
+        width: 70%;
+        background: #fff;
+        color: rgba(37, 99, 235, 1);
+
+        @media (max-width: 480px) {
+          width: 100%; // Кнопка занимает всю ширину на маленьких экранах
+        }
+      }
+    }
+  }
+}

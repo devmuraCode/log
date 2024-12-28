@@ -1,0 +1,32 @@
+.wrapper {
+  h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+  }
+
+  .cardGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 2rem;
+    padding: 3rem 0;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr; /* 1 column on mobile screens */
+      padding: 1rem 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  .header {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    .img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+
+      .img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      padding: 1.5rem;
+
+      .img {
+        max-width: 100%;
+      }
+    }
+  }
+}

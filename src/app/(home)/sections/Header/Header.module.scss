@@ -1,0 +1,89 @@
+.wrapper {
+  padding: 2rem 0;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  background: url(../../../../assets/carouselbg.jpg) no-repeat center center/cover;
+  width: 100% !important;
+  height: max-content;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.next,
+.previous {
+  background: #2563eb;
+  color: #fff;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.previous {
+  left: -2rem;
+}
+
+.next {
+  right: -2rem;
+}
+
+/* Адаптивная версия для мобильных устройств */
+@media (max-width: 768px) {
+  .content {
+    background: #f7f9fc;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  }
+
+  .next,
+  .previous {
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: auto;
+    bottom: 0.5rem;
+    transform: none;
+    z-index: 10;
+  }
+
+  .previous {
+    left: calc(50% - 3rem);
+  }
+
+  .next {
+    right: calc(50% - 3rem);
+  }
+}

@@ -1,0 +1,111 @@
+.wrapper {
+	background: url(../../../../assets/downdocs.jpg) no-repeat center center /
+		cover;
+	height: max-content;
+	padding: 5rem 0;
+
+	.content {
+		border: 1px solid #ffffff1a;
+		padding: 3rem 0;
+		border-radius: 40px;
+		backdrop-filter: blur(7px);
+		-webkit-backdrop-filter: blur(7px);
+		background: rgba(255, 255, 255, 0.1);
+
+		h1 {
+			font-family: Manrope;
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 43.71px;
+			text-align: center;
+			text-underline-position: from-font;
+			text-decoration-skip-ink: none;
+			color: white;
+		}
+
+		.downcardGroup {
+			width: 65%;
+			padding-top: 5rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+
+			@media (max-width: 1200px) {
+				width: 85%;
+			}
+
+			@media (max-width: 900px) {
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+			}
+		}
+
+		.downcard {
+			width: 20rem;
+
+			@media (max-width: 1200px) {
+				width: 18rem;
+			}
+
+			@media (max-width: 900px) {
+				width: 80%;
+				margin-bottom: 2rem;
+			}
+
+			.inner {
+				display: flex;
+				gap: 2rem;
+				align-items: center;
+				padding-bottom: 2rem;
+
+				h3 {
+					font-family: Manrope;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 27.32px;
+					text-align: left;
+					text-underline-position: from-font;
+					text-decoration-skip-ink: none;
+					color: white;
+				}
+			}
+
+			button {
+				width: 70%;
+				background: #fff;
+				color: rgba(37, 99, 235, 1);
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.wrapper {
+		padding: 3rem 0;
+	}
+
+	.content {
+		padding: 2rem 0;
+
+		h1 {
+			font-size: 24px;
+			line-height: 32px;
+		}
+		.buttom {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.downcardGroup {
+			width: 90%;
+		}
+
+		.downcard {
+			width: 90%;
+			margin-bottom: 1rem;
+		}
+	}
+}

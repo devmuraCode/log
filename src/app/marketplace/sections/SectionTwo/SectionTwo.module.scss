@@ -1,0 +1,57 @@
+.wrapper {
+  background: url(../../../../assets/downdocs.jpg) no-repeat center center /
+    cover;
+  height: max-content;
+  padding: 5rem 0;
+  .content {
+    border: 1px solid #ffffff1a;
+    padding: 3rem 0;
+    border-radius: 40px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.1);
+
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: white;
+    }
+    .downcardGroup {
+      width: 65%;
+      padding-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .downcard {
+      width: 20rem;
+      .inner {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-bottom: 2rem;
+        h3 {
+          font-family: Manrope;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27.32px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: white;
+        }
+      }
+      button{
+        width: 70%;
+        background: #fff;
+        color: rgba(37, 99, 235, 1);
+      }
+    }
+  }
+}

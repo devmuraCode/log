@@ -1,0 +1,67 @@
+.wrapper {
+  background: url(../../../../assets/section3bg.jpg) no-repeat center center / cover;
+  width: 100%;
+  margin: 2rem 0;
+
+  .content {
+    width: 70%;
+    padding: 5rem 2rem; // Добавлен боковой отступ для мобильных устройств
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: black;
+      margin-bottom: 1rem; // Добавлен отступ снизу для заголовка
+
+      @media (max-width: 768px) {
+        font-size: 28px; // Уменьшенный размер заголовка на планшетах
+        line-height: 38px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 24px; // Уменьшенный размер заголовка на мобильных
+        line-height: 34px;
+      }
+    }
+
+    p {
+      font-family: Manrope;
+      font-size: 16px;
+      padding-top: 1rem;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      @media (max-width: 768px) {
+        font-size: 14px; // Уменьшенный размер шрифта на планшетах
+        line-height: 20px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 13px; // Уменьшенный размер шрифта на мобильных устройствах
+        line-height: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      width: 90%; // Увеличена ширина контента на планшетах
+      padding: 3rem 1rem; // Уменьшены отступы на планшетах
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      width: 100%; // Контент на всю ширину на мобильных устройствах
+      padding: 2rem 1rem; // Ещё меньшие отступы на мобильных устройствах
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.wrapper {
+  padding: 4rem 0;
+
+	.titleh1 {
+    font-family: Manrope, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .cardGroup {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+
+    .card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      text-align: center;
+      max-width: 250px;
+      margin: 1rem;
+      flex: 1;
+      min-width: 220px;
+
+      .icon {
+        margin: 0 auto 1rem;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .title {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: center;
+        color: #000000;
+      }
+
+      // Top left
+      &.topLeft .topAccent {
+        top: -5px;
+        left: -5px;
+        border-top: 5px solid #2563eb;
+        border-left: 5px solid #2563eb;
+        border-top-left-radius: 5px;
+      }
+
+      // Bottom right
+      &.bottomRight .topAccent {
+        bottom: -5px;
+        left: -5px;
+        border-bottom: 5px solid #2563eb;
+        border-left: 5px solid #2563eb;
+        border-bottom-left-radius: 5px;
+      }
+
+      // Top right
+      &.topRight .topAccent {
+        top: -5px;
+        right: -5px;
+        border-top: 5px solid #2563eb;
+        border-right: 5px solid #2563eb;
+        border-top-right-radius: 5px;
+      }
+
+      // Bottom left
+      &.bottomLeft .topAccent {
+        bottom: -5px;
+        right: -5px;
+        border-bottom: 5px solid #2563eb;
+        border-right: 5px solid #2563eb;
+        border-bottom-right-radius: 5px;
+      }
+
+      .topAccent {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+// Media queries for responsiveness
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 3rem 0;
+  }
+
+  .titleh1 {
+    font-size: 28px;
+  }
+
+  .cardGroup {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 220px;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 2rem 0;
+  }
+
+  .titleh1 {
+    font-size: 24px;
+  }
+
+  .cardGroup {
+    padding: 2rem 0;
+    justify-content: space-around;
+  }
+
+  .card {
+    max-width: 200px;
+    margin: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1.5rem 0;
+  }
+
+  .titleh1 {
+    font-size: 20px;
+  }
+
+  .cardGroup {
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+}
