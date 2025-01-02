@@ -24,7 +24,55 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 3rem 0;
-
+    .card {
+      width: 100%;
+      text-align: center;
+      height: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      img {
+        margin: 0 auto;
+      }
+      .title {
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding: 0.5rem 0;
+      }
+      .description {
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.86px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #696969;
+      }
+      .day {
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #2563eb;
+      }
+    }
     @media (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;

@@ -5,7 +5,7 @@
 
   .content {
     border: 1px solid #ffffff1a;
-    padding: 3rem 1.5rem; // Добавил отступы для мобильных
+    padding: 3rem 1.5rem; 
     border-radius: 40px;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -20,12 +20,12 @@
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       color: white;
-      margin-bottom: 2rem; // Добавил отступ снизу
+      margin-bottom: 0rem; 
     }
 
     .downcardGroup {
       width: 65%;
-      padding-top: 5rem;
+      padding-top: 3rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -81,7 +81,10 @@
         width: 70%;
         background: #fff;
         color: rgba(37, 99, 235, 1);
-
+        &:hover {
+          background: #696969;
+          color: white;
+        }
         @media (max-width: 480px) {
           width: 100%; // Кнопка занимает всю ширину на маленьких экранах
         }

@@ -14,6 +14,8 @@ const MenuItem: React.FC<MenuItemProps> = ({ label }) => {
         font-semibold
         uppercase
         cursor-pointer
+
+        hover:text-blue-500
       "
     >
       {label}

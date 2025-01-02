@@ -1,6 +1,6 @@
 .wrapper {
   background-color: #f9f9f9;
-
+  margin-top: 5rem;
   .cardGroup {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -8,11 +8,17 @@
     padding: 3rem 0;
 
     @media (max-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr); // По 2 карточки на строке на планшетах
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); // По 2 карточки на строке на планшетах
     }
 
     @media (max-width: 600px) {
-      grid-template-columns:repeat(2, 1fr); // По 1 карточке на строке на мобильных устройствах
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); // По 1 карточке на строке на мобильных устройствах
     }
   }
 }

@@ -15,7 +15,7 @@
 
     .card_group {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 колонки по умолчанию для больших экранов */
+        grid-template-columns: repeat(2, 1fr); /* 4 колонки по умолчанию для больших экранов */
         gap: 2rem;
         flex-wrap: wrap;
 

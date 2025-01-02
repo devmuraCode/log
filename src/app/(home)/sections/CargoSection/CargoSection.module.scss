@@ -1,11 +1,10 @@
 .wrapper {
-  background: url(../../../../assets/section3bg.jpg) no-repeat center center / cover;
+  background: url(../../../../assets/section3bg.jpg) no-repeat center center ;
   width: 100%;
-  margin: 2rem 0;
-
+ margin: 2rem 0 0 0;
   .content {
     width: 70%;
-    padding: 5rem 2rem; // Добавлен боковой отступ для мобильных устройств
+    padding: 5rem 2rem; 
     margin: 0 auto;
     text-align: center;
 
@@ -17,15 +16,15 @@
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       color: black;
-      margin-bottom: 1rem; // Добавлен отступ снизу для заголовка
+      margin-bottom: 1rem; 
 
       @media (max-width: 768px) {
-        font-size: 28px; // Уменьшенный размер заголовка на планшетах
+        font-size: 28px;
         line-height: 38px;
       }
 
       @media (max-width: 480px) {
-        font-size: 24px; // Уменьшенный размер заголовка на мобильных
+        font-size: 24px;
         line-height: 34px;
       }
     }
@@ -40,7 +39,7 @@
       text-decoration-skip-ink: none;
 
       @media (max-width: 768px) {
-        font-size: 14px; // Уменьшенный размер шрифта на планшетах
+        font-size: 14px;
         line-height: 20px;
       }
 
