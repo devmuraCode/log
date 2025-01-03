@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Container from "@/components/Container";
 import styles from "./Header.module.scss";
-import manufactured from "@/assets/manufactured.jpg";
-import manufactured2 from "@/assets/manufactured2.jpg";
+import manufactured from "@/assets/manufactured.svg";
+import manufactured2 from "@/assets/manufactured2.svg";
 
 export const Header = () => {
 	return (

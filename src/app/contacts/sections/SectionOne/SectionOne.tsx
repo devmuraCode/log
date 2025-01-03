@@ -7,7 +7,7 @@ import EmailImage from "@/assets/EmailIcon.svg";
 import WeChatImage from "@/assets/WeChatIcon.svg";
 import WhatsAppImage from "@/assets/WhatsAppIcon.svg";
 import Image from "next/image";
-import adressgirl from "@/assets/adressgirl.jpg";
+import adressgirl from "@/assets/adressgirl.svg";
 
 export const SectionOne = () => {
 	return (

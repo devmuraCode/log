@@ -9,9 +9,9 @@ const font = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Logistics",
-  //   icons: {
-  // 	icon: "",
-  //   }
+    icons: {
+  	icon: "/logo.svg",
+    }
 };
 
 export default function RootLayout({

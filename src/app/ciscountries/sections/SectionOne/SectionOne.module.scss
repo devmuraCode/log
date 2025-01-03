@@ -1,65 +1,97 @@
 .wrapper {
-	padding: 4rem 0 5rem 0;
+  padding: 4rem 0 5rem 0;
 
-	.content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 2rem 11rem;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 11rem;
 
-		h1 {
-			font-family: Manrope;
-			font-size: 32px;
-			font-weight: 600;
-			line-height: 43.71px;
-			text-align: center;
-			text-underline-position: from-font;
-			text-decoration-skip-ink: none;
-			color: black;
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: black;
 
-			@media (max-width: 768px) {
-				font-size: 24px;
-				line-height: 36px;
-				padding: 0 2rem;
-			}
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0 2rem;
+      }
 
-			@media (max-width: 480px) {
-				font-size: 18px;
-				line-height: 28px;
-			}
-		}
-		@media (max-width: 768px){
-			padding: 2rem;
-		}
+      @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+
+  .cardGroup {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 2rem;
+
+    @media (max-width: 1024px) {
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .title {
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #000000;
+	  padding: 0.5rem 0;
+    }
+    .description {
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #696969;
+    }
+	img{
+		margin: 0 auto;
 	}
 
-	.cardGroup {
-		display: flex;
-		justify-content: space-between;
-		align-self: center;
-		gap: 2rem;
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
 
-		@media (max-width: 1024px) {
-			gap: 1.5rem;
-		}
-
-		@media (max-width: 768px) {
-			flex-direction: column;
-			align-items: center;
-			gap: 1rem;
-		}
-	}
-
-	.card {
-		width: 100%;
-		max-width: 400px;
-
-		@media (max-width: 768px) {
-			max-width: 90%;
-		}
-
-		@media (max-width: 480px) {
-			max-width: 100%;
-		}
-	}
+    @media (max-width: 480px) {
+      max-width: 100%;
+    }
+  }
 }

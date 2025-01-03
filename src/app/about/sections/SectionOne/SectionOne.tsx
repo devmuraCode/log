@@ -2,8 +2,8 @@ import Container from '@/components/Container';
 import styles from './SectionOne.module.scss'
 import { Card } from '@/components/Card/Card';
 import Image from 'next/image';
-import about2 from '@/assets/about2.jpg'
-import about3 from '@/assets/about3.jpg'
+import about2 from '@/assets/about2.svg'
+import about3 from '@/assets/about3.svg'
 import { Card2 } from '@/components/Card/Card2';
 
 export const SectionOne = () => {

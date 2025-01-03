@@ -2,8 +2,8 @@ import Container from "@/components/Container";
 import styles from "./Header.module.scss";
 import { Card } from "@/components/Card/Card";
 import Image from "next/image";
-import about2 from "@/assets/cis1.jpg";
-import about3 from "@/assets/cis2.jpg";
+import about2 from "@/assets/cis1.svg";
+import about3 from "@/assets/cis2.svg";
 
 export const Header = () => {
 	return (

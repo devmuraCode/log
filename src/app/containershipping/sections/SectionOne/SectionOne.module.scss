@@ -14,7 +14,7 @@
 	}
 
 	.card {
-		width: 100%;
+		width: 535px;
 		padding: 2rem;
 		height: auto;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -46,8 +46,8 @@
 
 	.cardGroup {
 		display: flex;
-		justify-content: space-between;
 		gap: 2rem;
+		justify-content: center;
 
 		// Адаптив для планшетов и мобильных устройств
 		@media (max-width: 768px) {

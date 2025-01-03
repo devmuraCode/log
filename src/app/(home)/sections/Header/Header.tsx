@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import bg1 from '@/assets/headerbg1.jpg'
-import bg2 from '@/assets/headerbg2.jpg'
-import bg3 from '@/assets/headerbg3.jpg'
+import bg1 from '@/assets/headerbg1.svg'
+import bg2 from '@/assets/headerbg2.svg'
+import bg3 from '@/assets/headerbg3.svg'
 import styles from "./Header.module.scss";
 import { Card } from "@/components/Card/Card";
 import Container from "@/components/Container";

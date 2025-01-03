@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 import { Card } from "@/components/Card/Card";
 import Container from "@/components/Container";
-import img from "@/assets/hong-kong.jpg";
+import img from "@/assets/hong-kong.svg";
 import Image from "next/image";
 
 const Header = () => {
