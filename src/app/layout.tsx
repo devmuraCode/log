@@ -5,13 +5,14 @@ import { Manrope } from "next/font/google";
 import { Footer } from "@/components/Footer/Footer";
 import Modal from "@/components/Modal/Modal";
 import { RegisterModa } from "@/components/Modal/RegisterModa";
+import { ContactModal } from "@/components/Modal/ContactModal";
 const font = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Logistics",
-    icons: {
-  	icon: "/logo.svg",
-    }
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +27,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <RegisterModa />
+        <ContactModal />
       </body>
     </html>
   );

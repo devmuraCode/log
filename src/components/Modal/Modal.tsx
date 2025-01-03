@@ -11,6 +11,7 @@ interface ModalProps {
   ) => void;
   body: React.ReactNode;
   footer: React.ReactNode;
+  title: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -19,6 +20,7 @@ const Modal: React.FC<ModalProps> = ({
   onSubmit,
   body,
   footer,
+  title,
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
   const [remember, setRemember] = useState(false);
@@ -48,7 +50,7 @@ const Modal: React.FC<ModalProps> = ({
           focus:outline-none
           bg-neutral-800/70"
     >
-      <div className="bg-white w-full max-w-md mx-4 p-6 rounded-lg  relative">
+      <div className="bg-white w-full max-w-3xl mx-4 p-6 rounded-lg  relative">
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-black"
@@ -80,9 +82,9 @@ const Modal: React.FC<ModalProps> = ({
           <div className="mt-4">
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded-md text-lg font-medium hover:bg-blue-600 transition"
+              className="w-full max-w-3xl bg-blue-500 text-white py-2 rounded-md text-lg font-medium hover:bg-blue-600 transition"
             >
-              Вход
+              {title}
             </button>
           </div>
           <div>{footer}</div>

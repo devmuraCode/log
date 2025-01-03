@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import useContactModal from "@/hooks/useContactModal";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ const Navbar: React.FC = () => {
   };
 
   const registerModal = useRegisterModal();
+  const contactModal = useContactModal();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -154,7 +156,10 @@ const Navbar: React.FC = () => {
                   >
                     Вход/Регистрация
                   </button>
-                  <button className={styles.contactButton}>
+                  <button
+                    onClick={contactModal.onOpen}
+                    className={styles.contactButton}
+                  >
                     Связаться с нами
                   </button>
                 </div>

@@ -105,6 +105,7 @@ export const RegisterModa = () => {
 				onSubmit={handleSubmit(onSubmit)}
 				body={bodyContent}
 				footer={footerContent}
+				title="Регистрация"
 			/>
 		</div>
 	);
