@@ -6,6 +6,7 @@ import location from '@/assets/location.svg'
 import phone from '@/assets/telephone.svg'
 import navigation from '@/assets/navigation.svg'
 import support from '@/assets/support.svg'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -39,14 +40,14 @@ export const Footer = () => {
               <h3>Навигация</h3>
             </div>
             <ul>
-              <li>Главная</li>
-              <li>О нас</li>
-              <li>Помощь</li>
-              <li>Карго доставка из Китая</li>
-              <li>Перевозка товаров </li>
-              <li>Представитель в Китае</li>
-              <li>Выкуп товаров с китайских сайтов</li>
-              <li>Доставка товаров из Китая для маркетплейсов</li>
+              <Link href="/">Главная</Link>
+              <Link href="/about">О нас</Link>
+              <Link href="/help">Помощь</Link>
+              <Link href="/cargotransportation">Карго доставка из Китая</Link>
+              <Link href="/transportation">Перевозка товаров </Link>
+              <Link href="/ciscountries">Представитель в Китае</Link>
+              <Link href="/commission">Выкуп товаров с китайских сайтов</Link>
+              <Link href="/ciscountries">Доставка товаров из Китая для маркетплейсов</Link>
             </ul>
           </div>
           <div>

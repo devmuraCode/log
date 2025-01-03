@@ -5,26 +5,28 @@ import { Manrope } from "next/font/google";
 import { Footer } from "@/components/Footer/Footer";
 import Modal from "@/components/Modal/Modal";
 import { RegisterModa } from "@/components/Modal/RegisterModa";
-
 const font = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Logistics",
+  title: "Logistics",
+  //   icons: {
+  // 	icon: "",
+  //   }
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang="en">
-			<body className={font.className}>
-				<Navbar />
-				{children}
-				<Footer />
-				<RegisterModa />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={font.className}>
+        <Navbar />
+        {children}
+        <Footer />
+        <RegisterModa />
+      </body>
+    </html>
+  );
 }
