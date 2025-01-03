@@ -125,23 +125,24 @@ const Navbar: React.FC = () => {
                         <IoIosArrowDown className="ml-0.5 text-lg" />
                       </div>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      <DropdownMenuSeparator />
-                      <DropdownMenuItem asChild>
-                        <Link href="/transportation">
-                          <MenuItem label="Перевозка товаров" />
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
-                        <Link href="/commission">
-                          <MenuItem label="Выкуп товаров с китайских сайтов" />
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
-                        <Link href="/marketplace">
-                          <MenuItem label="Доставка товаров из Китая для маркетплейсов" />
-                        </Link>
-                      </DropdownMenuItem>
+                    <DropdownMenuContent className="p-4 md:w-max">
+                      <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
+                        <DropdownMenuItem asChild>
+                          <Link href="/transportation">
+                            <MenuItem label="Перевозка товаров" />
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link href="/commission">
+                            <MenuItem label="Выкуп товаров с китайских сайтов" />
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link href="/marketplace">
+                            <MenuItem label="Доставка товаров из Китая для маркетплейсов" />
+                          </Link>
+                        </DropdownMenuItem>
+                      </div>
                     </DropdownMenuContent>
                   </DropdownMenu>
 
@@ -191,7 +192,10 @@ const Navbar: React.FC = () => {
                 >
                   Вход/Регистрация
                 </button>
-                <button className={styles.contactButton} onClick={contactModal.onOpen}>
+                <button
+                  className={styles.contactButton}
+                  onClick={contactModal.onOpen}
+                >
                   Связаться с нами
                 </button>
               </div>

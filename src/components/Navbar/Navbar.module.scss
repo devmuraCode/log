@@ -1,15 +1,16 @@
-
 .navbar {
   position: fixed;
   top: 0;
-
   width: 85%;
   z-index: 40;
   border-radius: 10px;
   padding: 0 1rem;
   box-shadow: 0 4px 4px rgba(167, 167, 167, 0.05);
-  margin: 0 auto;
+  margin: 0;
   background-color: #fff;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .navbarContent {
