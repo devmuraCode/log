@@ -1,3 +1,4 @@
+"use client";
 import Container from "@/components/Container";
 import styles from "./ReviewSection.module.scss";
 import { Button } from "@/components/ui/button";

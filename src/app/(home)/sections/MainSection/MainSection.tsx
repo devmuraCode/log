@@ -1,3 +1,4 @@
+"use client"
 import Container from '@/components/Container'
 import styles from './mainSection.module.scss'
 import { CardMain } from '@/components/CardMain/CardMain'
