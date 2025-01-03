@@ -4,13 +4,14 @@ import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
+import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 
 export default function Marketplace() {
 	return (
 		<div>
 			<Header />
 			<SectionOne />
-			<SectionTwo />
+			<DownDocs/>
 			<Advantages />
 			<SectionThree />
 			<ReviewSection/>

@@ -6,6 +6,7 @@ import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import { SectionFive } from "./sections/SectionFive/SectionFive";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
+import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 
 export default function TransportationFromChina() {
 	return (
@@ -14,7 +15,7 @@ export default function TransportationFromChina() {
 			<SectionOne />
 			<SectionTwo />
             <SectionThree/>
-			<SectionFor />
+			<DownDocs/>
 			<Advantages/>
 			<SectionFive/>
 			<ReviewSection/>

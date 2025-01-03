@@ -5,6 +5,7 @@ import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import { Advantages } from "@/components/Advantages/Advantages";
 import { SectionFor } from "./sections/SectionFor/SectionFor";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
+import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 
 
 export default function ContainerShipping () {
@@ -13,7 +14,7 @@ export default function ContainerShipping () {
             <Header/>
             <SectionOne/>
             <SectionTwo/>
-            <SectionThree/>
+            <DownDocs/>
             <Advantages/>
             <SectionFor/>
             <ReviewSection/>

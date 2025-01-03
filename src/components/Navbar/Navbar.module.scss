@@ -1,14 +1,18 @@
-.navbar {
-  position: fixed; 
+ .navbar {
+  position: fixed;
   top: 0;
-  width: 86%; 
-  z-index: 1000; 
+  left: 0; 
+  right: 0; 
+  width: 100%;
+  z-index: 40;
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 0 4rem;
   box-shadow: 0 4px 4px rgba(167, 167, 167, 0.05);
   margin: 0;
   background-color: #fff;
 }
+
+
 
 .navbarContent {
   display: flex;

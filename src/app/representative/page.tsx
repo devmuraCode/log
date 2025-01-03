@@ -1,3 +1,4 @@
+import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import { SectionFor } from "./sections/SectionFor/SectionFor";
 import { SectionOne } from "./sections/SectionOne/SectionOne";
@@ -10,7 +11,7 @@ export default function Representative() {
         <div>
             <SectionOne/>
             <SectionTwo/>
-            <SectionThree/>
+            <DownDocs/>
             <SectionFor/>
             <ReviewSection/>
         </div>
