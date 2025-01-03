@@ -5,7 +5,7 @@ import outline_user from "@/assets/paper.svg";
 import solar_case from "@/assets/_picture.svg";
 import handshake from "@/assets/square.svg";
 import huge from "@/assets/mage_id.svg";
-import arrow from "@/assets/docs.svg";
+import arrow from "@/assets/docs2.svg";
 import mynaui_cart from "@/assets/hugeicons_product.svg";
 
 export const SectionOne = () => {

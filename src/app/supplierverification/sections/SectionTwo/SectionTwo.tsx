@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import styles from "./SectionTwo.module.scss";
 import Image from "next/image";
-import image from "@/assets/5246753.jpg";
+import image from "@/assets/5246753.svg";
 
 export const SectionTwo = () => {
 	return (
