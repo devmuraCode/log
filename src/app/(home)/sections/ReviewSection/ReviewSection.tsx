@@ -1,8 +1,10 @@
 import Container from "@/components/Container";
 import styles from "./ReviewSection.module.scss";
 import { Button } from "@/components/ui/button";
+import useContactModal from "@/hooks/useContactModal";
 
 export const ReviewSection = () => {
+  const contactModal = useContactModal();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -12,7 +14,12 @@ export const ReviewSection = () => {
               Остались вопросы? <br />
               Свяжитесь с нами
             </h1>
-            <Button className={styles.contactButton}>Связаться с нами</Button>
+            <Button
+              className={styles.contactButton}
+              onClick={contactModal.onOpen}
+            >
+              Связаться с нами
+            </Button>
           </div>
           <h1></h1>
         </div>

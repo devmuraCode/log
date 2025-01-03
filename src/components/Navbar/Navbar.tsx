@@ -191,7 +191,7 @@ const Navbar: React.FC = () => {
                 >
                   Вход/Регистрация
                 </button>
-                <button className={styles.contactButton}>
+                <button className={styles.contactButton} onClick={contactModal.onOpen}>
                   Связаться с нами
                 </button>
               </div>

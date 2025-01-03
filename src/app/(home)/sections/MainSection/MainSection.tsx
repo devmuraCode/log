@@ -8,8 +8,10 @@ import main4 from '@/assets/main4.svg'
 import support from '@/assets/support.svg'
 import Image from "next/image";
 import { Button } from '@/components/ui/button'
+import useContactModal from '@/hooks/useContactModal'
 
 export const MainSection = () => {
+   const contactModal = useContactModal();
   return (
     <div className={styles.wrapper}>
         <Container>
@@ -26,7 +28,7 @@ export const MainSection = () => {
                   <div className={styles.content_card}>
                     <Image src={support} alt=''/>
                     <h3>Мы готовы ответить на ваши любые вопросы !</h3>
-                    <Button>Оставить запрос</Button>
+                    <Button onClick={contactModal.onOpen}>Оставить запрос</Button>
                   </div>
                 </div>
             </div>
