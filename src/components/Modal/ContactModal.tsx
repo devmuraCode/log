@@ -8,7 +8,7 @@ import useContactModal from "@/hooks/useContactModal";
 
 type Inputs = {
   email: string;
-  country: string;
+  selectservice: string;
   name: string;
   phone: string;
   description: string;
@@ -26,84 +26,77 @@ export const ContactModal = () => {
   const onSubmit = (data: Inputs) => {
     console.log(data);
   };
+
   const bodyContent = (
-    <div className="flex flex-col gap-4">
-      <Heading title="Оставить запрос" />
-      <div className="grid grid-cols-2 gap-3">
-        <Input
-          id="name"
-          name="name"
-          label="Имя и фамилия"
-          type="text"
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Input
+        id="name"
+        name="name"
+        label="Имя и фамилия"
+        type="text"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="phone"
+        name="phone"
+        label="Телефон"
+        type="tel"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="email"
+        name="email"
+        label="e-mail"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <div>
+        <select
+          id="selectservice"
+          {...register("selectservice", {
+            required: "Пожалуйста, выберите услугу",
+          })}
           disabled={isLoading}
-          // @ts-ignore
-          register={register}
-          errors={errors}
-          required
-        />
-        <Input
-          id="phone"
-          name="phone"
-          label="Телефон"
-          type="tel"
-          disabled={isLoading}
-          // @ts-ignore
-          register={register}
-          errors={errors}
-          required
-        />
-        <Input
-          id="email"
-          name="email"
-          label="email"
-          disabled={isLoading}
-          // @ts-ignore
-          register={register}
-          errors={errors}
-          required
-        />
-        <Input
-          id="сountry"
-          name="country"
-          label="Страна"
-          type="text"
-          disabled={isLoading}
-          // @ts-ignore
-          register={register}
-          errors={errors}
-          required
-        />
+          className={`peer w-full p-4 pt-6 font-light bg-slate-50 border-0 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed ${
+            errors.selectservice ? "border-red-500" : "border-gray-300"
+          }`}
+        >
+          <option value="" disabled hidden>
+            Выберите услугу...
+          </option>
+          <option value="consultation">Консультация</option>
+          <option value="installation">Установка</option>
+          <option value="repair">Ремонт</option>
+        </select>
+        {errors.selectservice && (
+          <p className="text-red-500 text-sm mt-1">
+            {errors.selectservice.message}
+          </p>
+        )}
       </div>
-      <textarea
-        name="description"
-        placeholder="Опишите подробнее интересующий вас вопрос"
-        id="description"
-        className="
-          w-full
-          p-4
-          bg-slate-50
-        h-52
-          "
-      ></textarea>
     </div>
   );
 
   const footerContent = (
-    <div className="flex flex-col gap-4 mt-3">
-     
-    </div>
+    <div></div>
   );
 
   return (
-    <div>
-      <Modal
-        isOpen={contactModal.isOpen}
-        onClose={contactModal.onClose}
-        onSubmit={handleSubmit(onSubmit)}
-        body={bodyContent}
-        footer={footerContent}
-        title="Отправить"
-      />
-    </div>
+    <Modal
+      isOpen={contactModal.isOpen}
+      onClose={contactModal.onClose}
+      onSubmit={handleSubmit(onSubmit)}
+      body={bodyContent}
+      footer={footerContent}
+      title="отпрвить"
+    />
   );
 };

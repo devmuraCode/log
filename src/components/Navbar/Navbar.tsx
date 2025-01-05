@@ -8,6 +8,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styles from "./Navbar.module.scss";
 import useRegisterModal from "@/hooks/useRegisterModal";
 import Link from "next/link";
+import ellipse from "@/assets/ellipse.svg";
 
 import { IoIosArrowDown } from "react-icons/io";
 import MenuItem from "./MenuList";
@@ -19,6 +20,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import useContactModal from "@/hooks/useContactModal";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -57,58 +59,103 @@ const Navbar: React.FC = () => {
                     <DropdownMenuContent className="p-4 md:w-max">
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div className="flex flex-col gap-2">
-                          <DropdownMenuItem asChild>
-                            <Link href="/transportation">
-                              Перевозка товаров
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/ciscountries">
-                              Доставка сборных товаров
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/containershipping">
-                              Контейнерные перевозки
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/commission">
-                              Выкуп товаров с китайских сайтов
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/marketplace">
-                              Доставка товаров из Китая для маркетплейсов
-                            </Link>
-                          </DropdownMenuItem>
+                          <div className={styles.dropdownOne}>
+                            <div className="flex items-center gap-2">
+                              <Image
+                                src={ellipse}
+                                alt="ellipse"
+                                width={20}
+                                height={20}
+                                className={styles.ellipseImage}
+                              />
+                              <DropdownMenuItem asChild>
+                                <Link href="/transportation">
+                                  Перевозка товаров
+                                </Link>
+                              </DropdownMenuItem>
+                            </div>
+                            <div className={styles.dropdownMenuItem1}>
+                              <DropdownMenuItem asChild>
+                                <Link href="/ciscountries">
+                                  Доставка сборных товаров
+                                </Link>
+                              </DropdownMenuItem>
+                              <DropdownMenuItem asChild>
+                                <Link href="/containershipping">
+                                  Контейнерные перевозки
+                                </Link>
+                              </DropdownMenuItem>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Image
+                              src={ellipse}
+                              alt="ellipse"
+                              width={20}
+                              height={20}
+                              className={styles.ellipseImage}
+                            />
+                            <DropdownMenuItem asChild>
+                              <Link href="/commission">
+                                Выкуп товаров с китайских сайтов
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Image
+                              src={ellipse}
+                              alt="ellipse"
+                              width={20}
+                              height={20}
+                              className={styles.ellipseImage}
+                            />
+                            <DropdownMenuItem asChild>
+                              <Link href="/marketplace">
+                                Доставка товаров из Китая для маркетплейсов
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
                         </div>
                         <div className="flex flex-col gap-2">
-                          <DropdownMenuItem asChild>
-                            <Link href="/representative">
-                              Представитель в Китае
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/searchsuppliers">
-                              Поиск поставщиков в Китае
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/manufactured">
-                              Производство в Китае (OEM, ODM)
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/supplierverification">
-                              Проверка поставщиков в Китае
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/ciscountries">
-                              Перевод денежных средств из России
-                            </Link>
-                          </DropdownMenuItem>
+                          <div className={styles.dropdownMenuItem}>
+                            <div className="flex items-center gap-2">
+                              <Image
+                                src={ellipse}
+                                alt="ellipse"
+                                width={20}
+                                height={20}
+                                className={styles.ellipseImage}
+                              />
+                              <DropdownMenuItem asChild>
+                                <Link href="/representative">
+                                  Представитель в Китае
+                                </Link>
+                              </DropdownMenuItem>
+                            </div>
+                          </div>
+
+                          <div className={styles.dropdownMenuItem1}>
+                            <DropdownMenuItem asChild>
+                              <Link href="/searchsuppliers">
+                                Поиск поставщиков в Китае
+                              </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                              <Link href="/manufactured">
+                                Производство в Китае (OEM, ODM)
+                              </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                              <Link href="/supplierverification">
+                                Проверка поставщиков в Китае
+                              </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                              <Link href="/ciscountries">
+                                Перевод денежных средств из России
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
                         </div>
                       </div>
                     </DropdownMenuContent>
@@ -126,7 +173,7 @@ const Navbar: React.FC = () => {
                       </div>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="p-4 md:w-max">
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
+                      <div className="grid grid-cols-1 gap-4 md:grid-cols-">
                         <DropdownMenuItem asChild>
                           <Link href="/transportation">
                             <MenuItem label="Перевозка товаров" />

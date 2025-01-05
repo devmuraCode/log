@@ -11,7 +11,7 @@ interface ModalProps {
   ) => void;
   body: React.ReactNode;
   footer: React.ReactNode;
-  title: string;
+  title?: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -50,7 +50,7 @@ const Modal: React.FC<ModalProps> = ({
           focus:outline-none
           bg-neutral-800/70"
     >
-      <div className="bg-white w-full max-w-3xl mx-4 p-6 rounded-lg  relative">
+      <div className="bg-white w-full max-w-3xl mx-4 p-8 rounded-lg  relative">
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-black"
