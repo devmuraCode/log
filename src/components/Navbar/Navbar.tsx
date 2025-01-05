@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                                 className={styles.ellipseImage}
                               />
                               <DropdownMenuItem asChild>
-                                <Link href="/transportation">
+                                <Link href="/cargotransportation">
                                   Перевозка товаров
                                 </Link>
                               </DropdownMenuItem>
@@ -173,20 +173,18 @@ const Navbar: React.FC = () => {
                       </div>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="p-4 md:w-max">
-                      <div className="grid grid-cols-1 gap-4 md:grid-cols-">
+                      <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
                         <DropdownMenuItem asChild>
-                          <Link href="/transportation">
-                            <MenuItem label="Перевозка товаров" />
-                          </Link>
+                          <Link href="/transportation">Перевозка товаров</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link href="/commission">
-                            <MenuItem label="Выкуп товаров с китайских сайтов" />
+                            Выкуп товаров с китайских сайтов
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link href="/marketplace">
-                            <MenuItem label="Доставка товаров из Китая для маркетплейсов" />
+                            Доставка товаров из Китая для маркетплейсов
                           </Link>
                         </DropdownMenuItem>
                       </div>
