@@ -1,83 +1,117 @@
 .wrapper {
-	padding: 4rem 0;
+  padding: 4rem 0;
 
-	.card_group {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 2rem;
+  .card_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 
-		@media (max-width: 768px) {
-			grid-template-columns: 1fr;
-			gap: 1rem;
-		}
-	}
-	.title_box {
-		padding: 1rem 0;
-		border-radius: 15px;
-		background: #2563eb1a;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  .advantages_title_catd {
+    border-radius: 15px;
+    background: rgba(37, 99, 235, 0.1);
+    text-align: center;
+    h1 {
+      position: relative;
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: rgba(0, 0, 0, 1);
+    }
 
-		h1 {
-			font-family: Manrope;
-			font-size: 32px;
-			font-weight: 600;
-			line-height: 43.71px;
-			text-align: center;
-			text-underline-position: from-font;
-			text-decoration-skip-ink: none;
-			color: #000000;
-		}
+    .general_title {
+      position: relative;
+      display: inline-block;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 5px;
+      color: #000;
+    }
 
-		margin: 2rem 0;
+    .general_title::before,
+    .general_title::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(183, 204, 250, 0.1);
+    }
 
-		@media (max-width: 768px) {
-			padding: 0;
-			border-radius: 15px;
-			background: none;
-			h1 {
-				font-size: 24px;
-			}
-		}
-	}
-	.card {
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-radius: 5px;
-		background-color: #fff;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-		padding: 20px 30px;
+    .general_title::before {
+      top: 10px;
+      left: 0px;
+      width: 20px;
+      height: 20px;
+      background: rgba(183, 204, 250, 0.1);
+      border: 5px solid #2563eb;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
 
-		@media (max-width: 768px) {
-			padding: 15px; /* Уменьшаем отступы на мобильных */
-		}
+    .general_title::after {
+      bottom: 10px;
+      right: 3px;
+      width: 20px;
+      height: 20px;
+      background: rgba(183, 204, 250, 0.1);
+      border: 5px solid #2563eb;
+      clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    }
+    @media screen and (max-width: 768px) {
+      background: none;
+      .general_title::before,
+      ::after {
+        display: none;
+      }
+    }
+  }
+  .card {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    margin: 1rem 0;
+    @media (max-width: 768px) {
+      padding: 15px; /* Уменьшаем отступы на мобильных */
+    }
 
-		h3 {
-			font-family: Manrope;
-			font-size: 16px;
-			text-align: center;
-			font-weight: 600;
-			line-height: 21.86px;
-			text-underline-position: from-font;
-			text-decoration-skip-ink: none;
-			color: #000000;
-			padding: 1rem 0;
-		}
+    h3 {
+      font-family: Manrope;
+      font-size: 18px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #000000;
+      padding: 1rem 0;
+    }
 
-		p {
-			font-family: Manrope;
-			font-size: 16px;
-			font-weight: 500;
-			line-height: 21.86px;
-			text-underline-position: from-font;
-			text-decoration-skip-ink: none;
-			color: #696969;
-			padding-left: 1rem;
-			margin-bottom: 1rem;
-			border-left: 3px solid #2563eb;
-		}
+    p {
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.86px;
+      letter-spacing: 0px;
+      word-spacing: -1px;
+      text-align: justify;
+      color: #696969;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid #2563eb;
+    }
 
-		img {
-			width: 50px;
-			height: 50px;
-			margin: 0 auto;
-		}
-	}
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+    }
+  }
 }

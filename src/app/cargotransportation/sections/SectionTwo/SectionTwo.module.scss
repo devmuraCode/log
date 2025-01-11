@@ -6,7 +6,6 @@
     line-height: 43.71px;
     text-align: center;
     color: #000000;
-    margin-bottom: 2rem;
 
     @media (max-width: 768px) {
       font-size: 28px;
@@ -23,7 +22,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
     .card {
       width: 100%;
       text-align: center;

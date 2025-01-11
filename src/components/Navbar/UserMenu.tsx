@@ -3,15 +3,15 @@ import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import MenuItem from "./MenuList";
 import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuSeparator,
-	DropdownMenuTrigger,
-	DropdownMenuItem,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+  DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 
 const UserMenu: React.FC = () => {
-	return (
+  return (
     <div className="flex flex-col gap-5 md:flex-row md:gap-7">
       <Link href="/">
         <MenuItem label="Главное" />
@@ -67,6 +67,18 @@ const UserMenu: React.FC = () => {
                   Перевод денежных средств из России
                 </Link>
               </DropdownMenuItem>
+
+              <DropdownMenuItem asChild>
+                <Link href="/transportation">Перевозка товаров</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/commission">Выкуп товаров с китайских сайтов</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/marketplace">
+                  Доставка товаров из Китая для маркетплейсов
+                </Link>
+              </DropdownMenuItem>
             </div>
           </div>
         </DropdownMenuContent>
@@ -84,28 +96,19 @@ const UserMenu: React.FC = () => {
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
-            <Link href="/transportation">
-              <MenuItem label="Перевозка товаров" />
-            </Link>
+            <Link href="/contacts">Контакты</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/commission">
-              <MenuItem label="Выкуп товаров с китайских сайтов" />
-            </Link>
+            <Link href="/documents">Документы</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/marketplace">
-              <MenuItem label="Доставка товаров из Китая для маркетплейсов" />
-            </Link>
+            <Link href="/">Новости</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Link href="/cargotransportation">
-        <MenuItem label="Карго доставка из Китая" />
-      </Link>
+      <Link href="/cargotransportation">Карго доставка из Китая</Link>
     </div>
   );
 };

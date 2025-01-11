@@ -35,15 +35,15 @@ export const SectionOne = () => {
           <div className={styles.images}>
             <div className={styles.card}>
               <Image src={ozon} alt="Image" />
-              <div>
+              {/* <div>
                 <Link href={'/marketplace/ozon'}>Ознакомиться полностью</Link>
-              </div>
+              </div> */}
             </div>
             <div className={styles.card}>
               <Image src={wildberries} alt="Image" />
-              <div>
+              {/* <div>
                 <Link href={'/marketplace/wildberries'}>Ознакомиться полностью</Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

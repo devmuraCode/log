@@ -96,7 +96,7 @@ export const ContactModal = () => {
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}
       footer={footerContent}
-      title="отпрвить"
+      title="отправить"
     />
   );
 };

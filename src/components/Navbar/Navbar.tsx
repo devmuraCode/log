@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
                             </div>
                             <div className={styles.dropdownMenuItem1}>
                               <DropdownMenuItem asChild>
-                                <Link href="/ciscountries">
+                                <Link href="/transportation">
                                   Доставка сборных товаров
                                 </Link>
                               </DropdownMenuItem>
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                               </Link>
                             </DropdownMenuItem>
                           </div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center columns-1 gap-2">
                             <Image
                               src={ellipse}
                               alt="ellipse"
@@ -155,6 +155,22 @@ const Navbar: React.FC = () => {
                                 Перевод денежных средств из России
                               </Link>
                             </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                              <Link href="/cargotransportation">
+                                Перевозка товаров
+                              </Link>
+                            </DropdownMenuItem>
+
+                            <DropdownMenuItem asChild>
+                              <Link href="/commission">
+                                Выкуп товаров с китайских сайтов
+                              </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                              <Link href="/marketplace">
+                                Доставка товаров из Китая для маркетплейсов
+                              </Link>
+                            </DropdownMenuItem>
                           </div>
                         </div>
                       </div>
@@ -174,24 +190,59 @@ const Navbar: React.FC = () => {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="p-4 md:w-max">
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
-                        <DropdownMenuItem asChild>
-                          <Link href="/transportation">Перевозка товаров</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link href="/commission">
-                            Выкуп товаров с китайских сайтов
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link href="/marketplace">
-                            Доставка товаров из Китая для маркетплейсов
-                          </Link>
-                        </DropdownMenuItem>
+                        <div className={styles.dropdownMenuItem}>
+                          <div className="flex items-center gap-2">
+                            <Image
+                              src={ellipse}
+                              alt="ellipse"
+                              width={20}
+                              height={20}
+                              className={styles.ellipseImage}
+                            />
+                            <DropdownMenuItem asChild>
+                              <Link href="/contacts">
+                                Контакты
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
+                        </div>
+                        <div className={styles.dropdownMenuItem}>
+                          <div className="flex items-center gap-2">
+                            <Image
+                              src={ellipse}
+                              alt="ellipse"
+                              width={20}
+                              height={20}
+                              className={styles.ellipseImage}
+                            />
+                            <DropdownMenuItem asChild>
+                              <Link href="/documents">
+                                Документы
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
+                        </div>
+                        <div className={styles.dropdownMenuItem}>
+                          <div className="flex items-center gap-2">
+                            <Image
+                              src={ellipse}
+                              alt="ellipse"
+                              width={20}
+                              height={20}
+                              className={styles.ellipseImage}
+                            />
+                            <DropdownMenuItem asChild>
+                              <Link href="/">
+                                Новости
+                              </Link>
+                            </DropdownMenuItem>
+                          </div>
+                        </div>
                       </div>
                     </DropdownMenuContent>
                   </DropdownMenu>
 
-                  <Link href="/cargotransportation">
+                  <Link href="/transportation">
                     <MenuItem label="Карго доставка из Китая" />
                   </Link>
                 </div>

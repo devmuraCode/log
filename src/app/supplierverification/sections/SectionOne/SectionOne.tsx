@@ -15,7 +15,7 @@ export const SectionOne = () => {
 				<div>
 					<div className={styles.title}>
 						<h1>
-							Проверка поставщика в Китае специалистами нашей компании включает:
+							Проверка поставщика в Китае специалистами <br /> нашей компании включает:
 						</h1>
 					</div>
 					<div className={styles.cardGroup}>

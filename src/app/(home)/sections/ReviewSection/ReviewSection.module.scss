@@ -1,11 +1,11 @@
 .wrapper {
   color: white;
+
   .content {
-    background: url("../../../../assets/pop.png") no-repeat center
-      center/contain;
+    background: url("../../../../assets/pop.png") no-repeat center center / contain;
     width: 100%;
-    margin: 0 4rem;
-	height: 85vh;
+    margin: 0 auto;
+    height: 85vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -13,7 +13,7 @@
 
     .reviews {
       text-align: start;
-		padding: 0 6rem;
+      padding: 0 8rem;
       h1 {
         font-family: "Manrope", sans-serif;
         font-size: 32px;
@@ -40,53 +40,51 @@
   }
 
   @media (max-width: 768px) {
-	margin: 2rem 0 0 0;
+    margin: 2rem 0;
     .content {
       flex-direction: column;
-      gap: 2rem;
-      padding: 4rem 0 4rem 0 !important;
-      background: url("../../../../assets/ggg.png") no-repeat center
-        center/contain;
-      height: max-content;
-      margin: 0;
+      gap: 1.5rem;
+      padding: 3rem 0;
+      background: url("../../../../assets/ggg.png") no-repeat center center / cover;
+      height: auto;
+      width: 100%;
       .reviews {
         text-align: center;
+        padding: 0 1rem;
       }
 
       h1 {
-        font-family: Manrope;
-        font-size: 18px;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px !important;
         font-weight: 600;
-        line-height: 32.78px;
+        line-height: 1.3;
         text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
       }
     }
 
     .contactButton {
       font-size: 14px;
+      padding: 0.5rem 1rem;
     }
   }
 
   @media (max-width: 480px) {
     .content {
-      gap: 2px;
+      gap: 1rem;
       padding: 2rem 0;
     }
 
     .contactButton {
       font-size: 12px;
+      padding: 0.5rem 0.8rem;
     }
 
     h1 {
-      font-family: Manrope;
-      font-size: 14px;
+      font-family: "Manrope", sans-serif;
+      font-size: 16px !important;
       font-weight: 600;
-      line-height: 32.78px;
+      line-height: 1.2;
       text-align: center;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
     }
   }
 }
