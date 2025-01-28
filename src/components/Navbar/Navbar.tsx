@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Container from "../Container";
 import UserMenu from "./UserMenu";
@@ -24,15 +24,36 @@ import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [isNavbarVisible, setNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
   };
 
   const registerModal = useRegisterModal();
   const contactModal = useContactModal();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setNavbarVisible(false); 
+      } else {
+        setNavbarVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={`${styles.wrapper} ${
+        isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+      } transition-transform duration-300 fixed top-0 w-full z-40 bg-white`}
+    >
       <Container>
         <div
           className={`transition duration-300 bg-white text-black ${styles.navbar}`}
@@ -200,9 +221,7 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/contacts">
-                                Контакты
-                              </Link>
+                              <Link href="/contacts">Контакты</Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
@@ -216,9 +235,7 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/documents">
-                                Документы
-                              </Link>
+                              <Link href="/documents">Документы</Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
@@ -232,9 +249,7 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/">
-                                Новости
-                              </Link>
+                              <Link href="/">Новости</Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
