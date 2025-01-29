@@ -1,6 +1,5 @@
 .navbar {
-  position: sticky;
-
+  transition: transform 0.3s ease;
   width: 100%;
   z-index: 40;
   border-radius: 10px;
