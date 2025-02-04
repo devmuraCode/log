@@ -48,6 +48,9 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isUserMenuOpen, setUserMenuOpen] = useState(false);
+
   return (
     <div
       className={`${styles.wrapper} ${
@@ -65,19 +68,30 @@ const Navbar: React.FC = () => {
               <Logo />
 
               <div className="hidden md:flex gap-6 items-center">
-                <div className="flex flex-col gap-5 md:flex-row md:gap-7 z-50">
+                <div className="flex flex-col gap-5 md:flex-row md:gap-12 z-50">
                   <Link href="/">
                     <MenuItem label="Главное" />
                   </Link>
 
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
+                  <DropdownMenu
+                    open={isDropdownOpen}
+                    onOpenChange={setDropdownOpen}
+                  >
+                    <DropdownMenuTrigger
+                      asChild
+                      onMouseEnter={() => setDropdownOpen(true)}
+                      onMouseLeave={() => setDropdownOpen(false)}
+                    >
                       <div className="flex items-center cursor-pointer">
                         <MenuItem label="Услуги" />
                         <IoIosArrowDown className="ml-0.5 text-lg" />
                       </div>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="p-4 md:w-max">
+                    <DropdownMenuContent
+                      className="p-4 md:w-max"
+                      onMouseEnter={() => setDropdownOpen(true)}
+                      onMouseLeave={() => setDropdownOpen(false)}
+                    >
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div className="flex flex-col gap-2">
                           <div className={styles.dropdownOne}>
@@ -202,14 +216,25 @@ const Navbar: React.FC = () => {
                     <MenuItem label="О Нас" />
                   </Link>
 
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
+                  <DropdownMenu
+                    open={isUserMenuOpen}
+                    onOpenChange={setUserMenuOpen}
+                  >
+                    <DropdownMenuTrigger
+                      asChild
+                      onMouseEnter={() => setUserMenuOpen(true)}
+                      onMouseLeave={() => setUserMenuOpen(false)}
+                    >
                       <div className="flex items-center cursor-pointer">
                         <MenuItem label="Помощь" />
                         <IoIosArrowDown className="ml-0.5 text-lg" />
                       </div>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="p-4 md:w-max">
+                    <DropdownMenuContent
+                      className="p-4 md:w-max"
+                      onMouseEnter={() => setUserMenuOpen(true)}
+                      onMouseLeave={() => setUserMenuOpen(false)}
+                    >
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
                         <div className={styles.dropdownMenuItem}>
                           <div className="flex items-center gap-2">

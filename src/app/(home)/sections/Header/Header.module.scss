@@ -41,10 +41,18 @@
 
 .previous {
   left: -2rem;
+  &:hover {
+     background-color: #FF6600;
+     color: white;
+  }
 }
 
 .next {
   right: -2rem;
+  &:hover {
+     background-color: #FF6600;
+     color: white;
+  }
 }
 
 /* Адаптивная версия для мобильных устройств */

@@ -29,7 +29,7 @@ export const MainSection = () => {
                   <div className={styles.content_card}>
                     <Image src={support} alt=''/>
                     <h3>Мы готовы ответить на ваши любые вопросы !</h3>
-                    <Button onClick={contactModal.onOpen}>Оставить запрос</Button>
+                    <Button onClick={contactModal.onOpen} className={styles.button}>Оставить запрос</Button>
                   </div>
                 </div>
             </div>
