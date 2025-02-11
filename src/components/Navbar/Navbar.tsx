@@ -30,6 +30,8 @@ const Navbar: React.FC = () => {
     setMobileMenuOpen((prev) => !prev);
   };
 
+
+
   const registerModal = useRegisterModal();
   const contactModal = useContactModal();
 
@@ -88,7 +90,7 @@ const Navbar: React.FC = () => {
                       </div>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent
-                      className="py-4 md:w-max"
+                      className="p-4 md:w-max"
                       onMouseEnter={() => setDropdownOpen(true)}
                       onMouseLeave={() => setDropdownOpen(false)}
                     >
@@ -186,7 +188,7 @@ const Navbar: React.FC = () => {
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                              <Link href="manufactured" scroll={false}>
+                              <Link href="manufactured" scroll={false} >
                                 Перевод денежных средств
                               </Link>
                             </DropdownMenuItem>

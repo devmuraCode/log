@@ -67,18 +67,6 @@ const UserMenu: React.FC = () => {
                   Перевод денежных средств из России
                 </Link>
               </DropdownMenuItem>
-
-              <DropdownMenuItem asChild>
-                <Link href="/transportation">Перевозка товаров</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/commission">Выкуп товаров с китайских сайтов</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/marketplace">
-                  Доставка товаров из Китая для маркетплейсов
-                </Link>
-              </DropdownMenuItem>
             </div>
           </div>
         </DropdownMenuContent>
