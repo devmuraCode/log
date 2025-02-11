@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import styles from "./SectionFor.module.scss";
 import year from "@/assets/year.svg";
-import cart from "@/assets/cart.svg";
+import img2 from "@/assets/img2.svg";
 import money from "@/assets/money.svg";
 import bus from "@/assets/bus.svg";
 import Image from "next/image";
@@ -31,9 +31,9 @@ export const SectionFor = () => {
              >
                <div className={styles.topAccent}></div>
                <div className={styles.icon}>
-                 <Image src={cart} alt="Icon" />
+                 <Image src={img2} alt="Icon" />
                </div>
-               <div className={styles.title}>Продажа на маркетплейсах</div>
+               <div className={styles.title}>Консолидация товаров</div>
              </Link>
              <Link
                href={"/ciscountries"}

@@ -30,6 +30,8 @@ const Navbar: React.FC = () => {
     setMobileMenuOpen((prev) => !prev);
   };
 
+
+
   const registerModal = useRegisterModal();
   const contactModal = useContactModal();
 
@@ -111,7 +113,7 @@ const Navbar: React.FC = () => {
                             </div>
                             <div className={styles.dropdownMenuItem1}>
                               <DropdownMenuItem asChild>
-                                <Link href="/transportation">
+                                <Link href="/ciscountries">
                                   Доставка сборных товаров
                                 </Link>
                               </DropdownMenuItem>
@@ -186,24 +188,8 @@ const Navbar: React.FC = () => {
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                              <Link href="/ciscountries">
-                                Перевод денежных средств из России
-                              </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem asChild>
-                              <Link href="/cargotransportation">
-                                Перевозка товаров
-                              </Link>
-                            </DropdownMenuItem>
-
-                            <DropdownMenuItem asChild>
-                              <Link href="/commission">
-                                Выкуп товаров с китайских сайтов
-                              </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem asChild>
-                              <Link href="/marketplace">
-                                Доставка товаров из Китая для маркетплейсов
+                              <Link href="manufactured" scroll={false} >
+                                Перевод денежных средств
                               </Link>
                             </DropdownMenuItem>
                           </div>

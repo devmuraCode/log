@@ -14,8 +14,10 @@ import bank from "@/assets/bank.svg";
 import cam from "@/assets/cam.svg";
 import s337 from "@/assets/337.svg";
 export const SectionThree = () => {
+
+  
 	return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} >
       <Container>
         <div className={styles.content}>
           <div className={styles.text}>

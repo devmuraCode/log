@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import styles from "./SectionFor.module.scss";
-import year from "@/assets/year.svg";
+import img1 from "@/assets/img1.svg";
 import cart from "@/assets/cart.svg";
 import money from "@/assets/money.svg";
 import bus from "@/assets/bus.svg";
@@ -21,9 +21,9 @@ export const SectionFor = () => {
              >
                <div className={styles.topAccent}></div>
                <div className={styles.icon}>
-                 <Image src={year} alt="Icon" />
+                 <Image src={img1} alt="Icon" />
                </div>
-               <div className={styles.title}>Выкуп с 1688</div>
+               <div className={styles.title}>Контейнерные перевозки</div>
              </Link>
              <Link
                href={"/marketplace"}
