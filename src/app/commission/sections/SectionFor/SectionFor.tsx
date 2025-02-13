@@ -3,7 +3,7 @@ import styles from "./SectionFor.module.scss";
 import year from "@/assets/year.svg";
 import cart from "@/assets/cart.svg";
 import money from "@/assets/money.svg";
-import bus from "@/assets/bus.svg";
+import img66 from "@/assets/img66.svg";
 import Image from "next/image";
 
 export const SectionFor = () => {
@@ -40,7 +40,7 @@ export const SectionFor = () => {
 						<div className={`${styles.card} ${styles.bottomLeft}`}>
 							<div className={styles.topAccent}></div>
 							<div className={styles.icon}>
-								<Image src={bus} alt="Icon" />
+								<Image src={img66} alt="Icon" />
 							</div>
 							<div className={styles.title}>Проверка поставщиков в Китае</div>
 						</div>

@@ -41,10 +41,7 @@
 
     .downcard {
       width: 20rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+ 
 
       @media (max-width: 768px) {
         width: 100%; // Карточка занимает всю ширину на мобильных
