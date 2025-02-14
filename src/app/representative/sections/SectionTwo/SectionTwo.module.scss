@@ -7,54 +7,65 @@
     gap: 2rem;
 
     @media (max-width: 768px) {
-      grid-template-columns: 1fr; // На мобильных устройствах карточки в одну колонку
+      grid-template-columns: 1fr;
       gap: 1rem;
     }
   }
-  .general_title {
-    position: relative;
-    display: inline-block;
-    padding: 1rem;
+
+.header {
+  background: #2563eb26;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.71px;
     text-align: center;
-    border-radius: 5px;
-    color: #000;
+    color: #000000;
   }
 
-  .general_title::before,
-  .general_title::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgba(183, 204, 250, 0.1);
-	  @media (max-width: 768px) {
-    background: none;
-    margin: 1rem 0;
-  }
-  }
+		.general_title {
+			position: relative;
+			display: inline-block;
+			padding: 1rem;
+			text-align: center;
+			border-radius: 5px;
+			color: #000;
+		}
 
-  .general_title::before {
-    top: 10px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    background: rgba(183, 204, 250, 0.1);
-    border: 5px solid #2563eb;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-  }
-  @media (max-width: 768px) {
-    background: none;
-    margin: 1rem 0;
-  }
-  .general_title::after {
-    bottom: 10px;
-    right: 3px;
-    width: 20px;
-    height: 20px;
-    background: rgba(183, 204, 250, 0.1);
-    border: 5px solid #2563eb;
-    clip-path: polygon(100% 100%, 0 100%, 100% 0);
-  }
+		.general_title::before,
+		.general_title::after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: rgba(183, 204, 250, 0.1);
+		}
+
+		.general_title::before {
+			top: 10px;
+			left: 0px;
+			width: 20px;
+			height: 20px;
+			background: rgba(183, 204, 250, 0.1);
+			border: 5px solid #2563eb;
+			clip-path: polygon(0 0, 100% 0, 0 100%);
+		}
+
+		.general_title::after {
+			bottom: 10px;
+			right: 3px;
+			width: 20px;
+			height: 20px;
+			background: rgba(183, 204, 250, 0.1);
+			border: 5px solid #2563eb;
+			clip-path: polygon(100% 100%, 0 100%, 100% 0);
+		}
+}
 
   .card {
     border-top: 1px solid rgba(0, 0, 0, 0.1);

@@ -12,11 +12,14 @@ export const SectionTwo = () => {
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.content}>
-          <div className={styles.general_title}>
-            <div className={styles.corner}></div>
-
-            <h1>Представитель в Китае</h1>
+          <div className={styles.header}>
+            <div className={styles.general_title}>
+              <div className={styles.corner}>
+                <h1>Услуги представителя которые мы предлагаем</h1>
+              </div>
+            </div>
           </div>
+
           <div className={styles.card_group}>
             <div className={styles.card}>
               <Image src={svgrepo} alt="" />

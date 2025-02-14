@@ -1,0 +1,50 @@
+.wrapper {
+  background: linear-gradient(135deg, #001f7a, #0036b3);
+  box-shadow: 11px 10px 0px 4px rgb(49, 112, 249);
+  border-radius: 30px;
+  padding: 10rem 6rem;
+  height: max-content;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #fff;
+  color: #0036b3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #e6e6e6;
+  }
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translate(20%, -50%);
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}

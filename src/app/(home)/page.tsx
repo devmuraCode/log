@@ -6,6 +6,7 @@ import { LegasySection } from './sections/LegasySection/LegasySection'
 import { MainSection } from './sections/MainSection/MainSection'
 import { TypesTransportationSection } from './sections/TypesTransportationSection/TypesTransportationSection'
 import { ReviewSection } from './sections/ReviewSection/ReviewSection'
+import { Section } from '@/components/Section/Section'
 
 export default function Page() {
   return (
@@ -17,7 +18,8 @@ export default function Page() {
       <LegasySection/>
       <Advantages/>
       <TypesTransportationSection/>
-      <ReviewSection/>
+      {/* <ReviewSection/> */}
+      <Section/>
     </div>
   )
 }
