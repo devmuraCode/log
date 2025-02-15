@@ -64,6 +64,11 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+body.modal-open {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
 
 @layer base {
   * {
