@@ -5,7 +5,7 @@ import about4 from "@/assets/about4.jpg";
 import about5 from "@/assets/hugeicons.svg";
 import year from "@/assets/year.svg";
 import about from "@/assets/linear.svg";
-import about2 from "@/assets/docs.svg";
+import about2 from "@/assets/mm.svg";
 import Image from "next/image";
 import support from "@/assets/support.svg";
 import money from '@/assets/money.svg'

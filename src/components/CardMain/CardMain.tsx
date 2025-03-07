@@ -24,6 +24,7 @@ export const CardMain: FC<IProps> = ({
   const props = href ? { href } : {};
 
   return (
+    // @ts-ignore
     <Wrapper {...props} className={styles.wrapper}>
       <Image src={image} alt="" />
       <div className={styles.content}>

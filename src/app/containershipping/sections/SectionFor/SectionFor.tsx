@@ -53,7 +53,7 @@ export const SectionFor = () => {
                <div className={styles.icon}>
                  <Image src={bus} alt="Icon" />
                </div>
-               <div className={styles.title}>Доставка асиков</div>
+               <div className={styles.title}>Перевозка товаров</div>
              </Link>
            </div>
          </div>

@@ -16,7 +16,7 @@ export const SectionThree = () => {
 
           <div className={styles.cardGroup}>
             <Link
-              href={"/commission"}
+              href={"/manufactured"}
               className={`${styles.card} ${styles.topLeft}`}
             >
               <div className={styles.topAccent}></div>
@@ -28,7 +28,7 @@ export const SectionThree = () => {
               </div>
             </Link>
             <Link
-              href={"/marketplace"}
+              href={"/commission"}
               className={`${styles.card} ${styles.bottomRight}`}
             >
               <div className={styles.topAccent}></div>

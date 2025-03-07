@@ -31,29 +31,33 @@ export const SectionThree = () => {
 	];
 
 	return (
-		<div className={styles.wrapper}>
-			<Container>
-				<div className={styles.header}>
-					<h2 className={styles.title}>Мы предоставляем такие услуги как</h2>
-				</div>
-				<div className={styles.grid}>
-					{services.map((service, index) => (
-						<div className={styles.card} key={index}>
-							<div className={styles.iconWrapper}>
-								<Image
-									src={service.icon}
-									alt={service.title}
-									width={40}
-									height={40}
-									className={styles.icon}
-								/>
-							</div>
-							<h3 className={styles.cardTitle}>{service.title}</h3>
-							<p className={styles.description}>{service.description}</p>
-						</div>
-					))}
-				</div>
-			</Container>
-		</div>
-	);
+    <div className={styles.wrapper}>
+      <Container>
+        <div className={styles.advantages_title_catd}>
+          <div className={styles.general_title}>
+            <div className={styles.corner}></div>
+
+            <h1>Мы предоставляем такие услуги как</h1>
+          </div>
+        </div>
+        <div className={styles.grid}>
+          {services.map((service, index) => (
+            <div className={styles.card} key={index}>
+              <div className={styles.iconWrapper}>
+                <Image
+                  src={service.icon}
+                  alt={service.title}
+                  width={40}
+                  height={40}
+                  className={styles.icon}
+                />
+              </div>
+              <h3 className={styles.cardTitle}>{service.title}</h3>
+              <p className={styles.description}>{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
 };
