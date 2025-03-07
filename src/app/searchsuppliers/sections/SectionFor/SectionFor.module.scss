@@ -41,13 +41,17 @@
       min-width: 220px;
       margin: 1rem;
       min-height:24vh !important; // Занимает всю высоту
-
+transition: transform 0.2s ease, box-shadow 0.2s ease;
       display: flex;
       flex-direction: column; // Чтобы содержимое не ломалось
       justify-content: space-between; // Равномерно распределяет контент
 
       @media (max-width: 768px) {
         flex: 1 1 calc(100% - 2rem);
+      }
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
       }
 
       .icon {

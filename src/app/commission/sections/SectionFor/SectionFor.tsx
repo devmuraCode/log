@@ -3,7 +3,7 @@ import styles from "./SectionFor.module.scss";
 import year from "@/assets/year.svg";
 import cart from "@/assets/cart.svg";
 import money from "@/assets/money.svg";
-import img66 from "@/assets/img66.svg";
+import img66 from "@/assets/lo.svg";
 import Image from "next/image";
 
 export const SectionFor = () => {

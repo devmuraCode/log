@@ -3,7 +3,7 @@ import styles from "./SectionThree.module.scss";
 import year from "@/assets/year.svg";
 import cart from "@/assets/cart.svg";
 import money from "@/assets/money.svg";
-import bus from "@/assets/bus.svg";
+import bus from "@/assets/lupa.svg";
 import Image from "next/image";
 import Link from "next/link";
 
