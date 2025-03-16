@@ -1,11 +1,11 @@
+import { Section } from "@/components/Section/Section";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import Header from "./sections/Header/Header";
 import { SectionFor } from "./sections/SectionFor/SectionFor";
 import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
-
-
+import img from '@/assets/home.svg'
 
 export default function Commission() {
     return (
@@ -15,7 +15,7 @@ export default function Commission() {
             <SectionTwo/>
             <SectionThree/>
             <SectionFor/>
-            <ReviewSection/>
+            <Section imageSrc={img}/>
         </div>
     );
 }

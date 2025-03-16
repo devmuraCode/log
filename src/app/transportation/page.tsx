@@ -6,7 +6,8 @@ import { Advantages } from "@/components/Advantages/Advantages";
 import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 import { SectionFive } from "./sections/SectionFive/SectionFive";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
-
+import { Section } from "@/components/Section/Section";
+import img from '@/assets/home.svg'
 
 export default function Transportation() {
     return (
@@ -18,7 +19,7 @@ export default function Transportation() {
             <Advantages/>
             <DownDocs/>
             <SectionFive/>
-            <ReviewSection/>
+            <Section imageSrc={img}/>
         </div>
     );
 }

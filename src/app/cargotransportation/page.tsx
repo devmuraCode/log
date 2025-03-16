@@ -7,7 +7,8 @@ import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import { SectionFive } from "./sections/SectionFive/SectionFive";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
-
+import { Section } from "@/components/Section/Section";
+import img from '@/assets/home.svg'
 export default function TransportationFromChina() {
 	return (
 		<div>
@@ -18,7 +19,7 @@ export default function TransportationFromChina() {
 			<DownDocs/>
 			<Advantages/>
 			<SectionFive/>
-			<ReviewSection/>
+			<Section imageSrc={img}/>
 		</div>
 	);
 }

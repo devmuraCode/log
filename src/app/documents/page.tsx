@@ -7,7 +7,6 @@ export default function Documents  () {
         <div>
             <Header/>
             <SectionOne/>
-            
         </div>
     )
 }

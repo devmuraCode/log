@@ -10,7 +10,7 @@ import Image from "next/image";
 import adressgirl from "@/assets/adressgirl.svg";
 
 export const SectionOne = () => {
-	return (
+  return (
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.section}>
@@ -45,29 +45,33 @@ export const SectionOne = () => {
 
           <div className={styles.cards}>
             {/* Phone Card */}
-            <div className={styles.card}>
-              <h3>Телефон</h3>
-              <div className={styles.icon}>
-                <Image src={PhoneImage} alt="Phone" />
-                <p>+86 172 6414 4489</p>
+            <div className={styles.card1}>
+              <div>
+                <h3>Телефон</h3>
+                <div className={styles.icon}>
+                  <Image src={PhoneImage} alt="Phone" />
+                  <p>+86 172 6414 4489</p>
+                </div>
+                <p>Прием звонков: 12:00 - 21:00</p>
               </div>
-              <p>Прием звонков: 12:00 - 21:00</p>
             </div>
 
             {/* Email and Social Media Card */}
             <div className={styles.card}>
-              <h3>Почта и наши соц сети</h3>
-              <div className={styles.icon}>
-                <Image src={EmailImage} alt="Email" />
-                <p>info.legacyexpress@yandex.ru</p>
-              </div>
-              <div className={styles.icon}>
-                <Image src={WeChatImage} alt="WeChat" />
-                <p>+86 172 6414 4489</p>
-              </div>
-              <div className={styles.icon}>
-                <Image src={WhatsAppImage} alt="WhatsApp" />
-                <p>+86 172 6414 4489</p>
+              <div>
+                <h3>Почта и наши соц сети</h3>
+                <div className={styles.icon}>
+                  <Image src={EmailImage} alt="Email" />
+                  <p>info.legacyexpress@yandex.ru</p>
+                </div>
+                <div className={styles.icon}>
+                  <Image src={WeChatImage} alt="WeChat" />
+                  <p>+86 172 6414 4489</p>
+                </div>
+                <div className={styles.icon}>
+                  <Image src={WhatsAppImage} alt="WhatsApp" />
+                  <p>+86 172 6414 4489</p>
+                </div>
               </div>
             </div>
           </div>

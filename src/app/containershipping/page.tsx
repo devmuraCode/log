@@ -6,7 +6,8 @@ import { Advantages } from "@/components/Advantages/Advantages";
 import { SectionFor } from "./sections/SectionFor/SectionFor";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
-
+import { Section } from "@/components/Section/Section";
+import img from '@/assets/home.svg'
 
 export default function ContainerShipping () {
     return (
@@ -17,7 +18,7 @@ export default function ContainerShipping () {
             <DownDocs/>
             <Advantages/>
             <SectionFor/>
-            <ReviewSection/>
+            <Section imageSrc={img}/>
         </div>
     )
 }

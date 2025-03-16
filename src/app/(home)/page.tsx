@@ -7,6 +7,7 @@ import { MainSection } from './sections/MainSection/MainSection'
 import { TypesTransportationSection } from './sections/TypesTransportationSection/TypesTransportationSection'
 import { ReviewSection } from './sections/ReviewSection/ReviewSection'
 import { Section } from '@/components/Section/Section'
+import img from '@/assets/home.svg'
 
 export default function Page() {
   return (
@@ -19,7 +20,7 @@ export default function Page() {
       <Advantages/>
       <TypesTransportationSection/>
       {/* <ReviewSection/> */}
-      <Section/>
+      <Section imageSrc={img}/>
     </div>
   )
 }
