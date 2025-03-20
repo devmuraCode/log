@@ -38,7 +38,7 @@ export const SectionThree = () => {
               <div className={styles.title}>Выкуп с интернет маркетплейсов</div>
             </Link>
             <Link
-              href={"/ciscountries"}
+              href={"/representative"}
               className={`${styles.card} ${styles.topRight}`}
             >
               <div className={styles.topAccent}></div>

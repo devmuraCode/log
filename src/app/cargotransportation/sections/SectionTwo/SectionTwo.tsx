@@ -5,6 +5,7 @@ import img1 from "@/assets/plane.svg";
 import img2 from "@/assets/train.svg";
 import img3 from "@/assets/bus.svg";
 import img4 from "@/assets/ship.svg";
+import Link from "next/link";
 export const SectionTwo = () => {
 	return (
     <div className={styles.wrapper}>

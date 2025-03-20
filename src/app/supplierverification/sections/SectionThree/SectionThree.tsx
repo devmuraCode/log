@@ -13,6 +13,7 @@ import Image from "next/image";
 import bank from "@/assets/bank.svg";
 import cam from "@/assets/cam.svg";
 import s337 from "@/assets/337.svg";
+import Link from "next/link";
 export const SectionThree = () => {
 
   
@@ -107,7 +108,7 @@ export const SectionThree = () => {
           <div>
             <h1 className={styles.title}>Сопутствующие услуги</h1>
             <div className={styles.cardGroup}>
-              <div className={`${styles.card} ${styles.topLeft}`}>
+              <Link href="/manufactured" className={`${styles.card} ${styles.topLeft}`}>
                 <div className={styles.topAccent}></div>
                 <div className={styles.icon}>
                   <Image src={year} alt="Icon" />
@@ -115,28 +116,28 @@ export const SectionThree = () => {
                 <div>
                   Производство в Китае под собственным брендом (OEM, ODM){" "}
                 </div>
-              </div>
-              <div className={`${styles.card} ${styles.bottomRight}`}>
+              </Link>
+              <Link href="/ciscountries" className={`${styles.card} ${styles.bottomRight}`}>
                 <div className={styles.topAccent}></div>
                 <div className={styles.icon}>
                   <Image src={cart} alt="Icon" />
                 </div>
                 <div className={styles.title}>Консолидация товаров</div>
-              </div>
-              <div className={`${styles.card} ${styles.topRight}`}>
+              </Link>
+              <Link href="/representative" className={`${styles.card} ${styles.topRight}`}>
                 <div className={styles.topAccent}></div>
                 <div className={styles.icon}>
                   <Image src={money} alt="Icon" />
                 </div>
                 <div className={styles.title}>Перевод денег в Китай</div>
-              </div>
-              <div className={`${styles.card} ${styles.bottomLeft}`}>
+              </Link>
+              <Link href="/supplierverification" className={`${styles.card} ${styles.bottomLeft}`}>
                 <div className={styles.topAccent}></div>
                 <div className={styles.icon}>
                   <Image src={bus} alt="Icon" />
                 </div>
                 <div className={styles.title}>Проверка поставщиков в Китае</div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

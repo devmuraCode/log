@@ -16,7 +16,7 @@ export const SectionFor = () => {
 
            <div className={styles.cardGroup}>
              <Link
-               href={"/commission"}
+               href={"/containershipping"}
                className={`${styles.card} ${styles.topLeft}`}
              >
                <div className={styles.topAccent}></div>
@@ -53,7 +53,7 @@ export const SectionFor = () => {
                <div className={styles.icon}>
                  <Image src={bus} alt="Icon" />
                </div>
-               <div className={styles.title}>Доставка товаров</div>
+               <div className={styles.title}>Карго доставка</div>
              </Link>
            </div>
          </div>

@@ -46,7 +46,7 @@ export const SectionFive = () => {
               <div className={styles.title}>Перевод денежных средств</div>
             </Link>
             <Link
-              href={"/transportation"}
+              href={"/cargotransportation"}
               className={`${styles.card} ${styles.bottomLeft}`}
             >
               <div className={styles.topAccent}></div>
