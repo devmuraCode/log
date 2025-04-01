@@ -42,7 +42,7 @@ export const Footer = () => {
             <ul>
               <Link href="/">Главная</Link>
               <Link href="/about">О нас</Link>
-              <Link href="/help">Помощь</Link>
+              {/* <Link href="/help">Помощь</Link> */}
               <Link href="/cargotransportation">Карго доставка из Китая</Link>
               <Link href="/transportation">Перевозка товаров </Link>
               <Link href="/ciscountries">Представитель в Китае</Link>

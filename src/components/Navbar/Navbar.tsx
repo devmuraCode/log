@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import useContactModal from "@/hooks/useContactModal";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navbar: React.FC = () => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isUserMenuOpen, setUserMenuOpen] = useState(false);
-
+  const pathname = usePathname();
   return (
     <div
       className={`${styles.wrapper} ${
@@ -69,7 +70,10 @@ const Navbar: React.FC = () => {
 
               <div className="hidden md:flex gap-6 items-center">
                 <div className="flex flex-col gap-5 md:flex-row md:gap-12 z-50">
-                  <Link href="/">
+                  <Link
+                    href="/"
+                    className={pathname === "/" ? styles.active : ""}
+                  >
                     <MenuItem label="Главное" />
                   </Link>
 
@@ -104,19 +108,40 @@ const Navbar: React.FC = () => {
                                 className={styles.ellipseImage}
                               />
                               <DropdownMenuItem asChild>
-                                <Link href="/cargotransportation">
+                                <Link
+                                  href="/cargotransportation"
+                                  className={
+                                    pathname === "/cargotransportation"
+                                      ? styles.active
+                                      : ""
+                                  }
+                                >
                                   Перевозка товаров
                                 </Link>
                               </DropdownMenuItem>
                             </div>
                             <div className={styles.dropdownMenuItem1}>
                               <DropdownMenuItem asChild>
-                                <Link href="/ciscountries">
+                                <Link
+                                  href="/ciscountries"
+                                  className={
+                                    pathname === "/ciscountries"
+                                      ? styles.active
+                                      : ""
+                                  }
+                                >
                                   Доставка сборных товаров
                                 </Link>
                               </DropdownMenuItem>
                               <DropdownMenuItem asChild>
-                                <Link href="/containershipping">
+                                <Link
+                                  href="/containershipping"
+                                  className={
+                                    pathname === "/containershipping"
+                                      ? styles.active
+                                      : ""
+                                  }
+                                >
                                   Контейнерные перевозки
                                 </Link>
                               </DropdownMenuItem>
@@ -131,7 +156,14 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/commission">
+                              <Link
+                                href="/commission"
+                                className={
+                                  pathname === "/commission"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Выкуп товаров с китайских сайтов
                               </Link>
                             </DropdownMenuItem>
@@ -145,7 +177,14 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/marketplace">
+                              <Link
+                                href="/marketplace"
+                                className={
+                                  pathname === "/marketplace"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Доставка товаров из Китая для маркетплейсов
                               </Link>
                             </DropdownMenuItem>
@@ -162,7 +201,14 @@ const Navbar: React.FC = () => {
                                 className={styles.ellipseImage}
                               />
                               <DropdownMenuItem asChild>
-                                <Link href="/representative">
+                                <Link
+                                  href="/representative"
+                                  className={
+                                    pathname === "/representative"
+                                      ? styles.active
+                                      : ""
+                                  }
+                                >
                                   Представитель в Китае
                                 </Link>
                               </DropdownMenuItem>
@@ -171,22 +217,52 @@ const Navbar: React.FC = () => {
 
                           <div className={styles.dropdownMenuItem1}>
                             <DropdownMenuItem asChild>
-                              <Link href="/searchsuppliers">
+                              <Link
+                                href="/searchsuppliers"
+                                className={
+                                  pathname === "/searchsuppliers"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Поиск поставщиков в Китае
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                              <Link href="/manufactured">
+                              <Link
+                                href="/manufactured"
+                                className={
+                                  pathname === "/manufactured"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Производство в Китае (OEM, ODM)
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                              <Link href="/supplierverification">
+                              <Link
+                                href="/supplierverification"
+                                className={
+                                  pathname === "/supplierverification"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Проверка поставщиков в Китае
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                              <Link href="manufactured" scroll={false}>
+                              <Link
+                                href="/supplierverification#payment-section"
+                                scroll={false}
+                                className={
+                                  pathname ===
+                                  "/supplierverification#payment-section"
+                                    ? styles.active
+                                    : ""
+                                }
+                              >
                                 Перевод денежных средств
                               </Link>
                             </DropdownMenuItem>
@@ -196,7 +272,10 @@ const Navbar: React.FC = () => {
                     </DropdownMenuContent>
                   </DropdownMenu>
 
-                  <Link href="/about">
+                  <Link
+                    href="/about"
+                    className={pathname === "/about" ? styles.active : ""}
+                  >
                     <MenuItem label="О Нас" />
                   </Link>
 
@@ -230,7 +309,14 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/contacts">Контакты</Link>
+                              <Link
+                                href="/contacts"
+                                className={
+                                  pathname === "/contacts" ? styles.active : ""
+                                }
+                              >
+                                Контакты
+                              </Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
@@ -244,7 +330,14 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/documents">Документы</Link>
+                              <Link
+                                href="/documents"
+                                className={
+                                  pathname === "/documents" ? styles.active : ""
+                                }
+                              >
+                                Документы
+                              </Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
@@ -258,7 +351,14 @@ const Navbar: React.FC = () => {
                               className={styles.ellipseImage}
                             />
                             <DropdownMenuItem asChild>
-                              <Link href="/">Новости</Link>
+                              <Link
+                                href="/news"
+                                className={
+                                  pathname === "/news" ? styles.active : ""
+                                }
+                              >
+                                Новости
+                              </Link>
                             </DropdownMenuItem>
                           </div>
                         </div>
@@ -266,7 +366,12 @@ const Navbar: React.FC = () => {
                     </DropdownMenuContent>
                   </DropdownMenu>
 
-                  <Link href="/transportation">
+                  <Link
+                    href="/transportation"
+                    className={
+                      pathname === "/transportation" ? styles.active : ""
+                    }
+                  >
                     <MenuItem label="Карго доставка из Китая" />
                   </Link>
                 </div>

@@ -1,5 +1,6 @@
 .wrapper {
-  background: url(../../../../assets/section3bg.jpg) no-repeat center center/cover;
+  background: url(../../../../assets/section3bg.jpg) no-repeat center
+    center/cover;
   width: 100%;
   margin: 2rem 0 0 0;
   .content {
@@ -9,7 +10,7 @@
     text-align: center;
 
     h1 {
-      font-family: Manrope;
+      font-family: "Manrope", sans-serif;
       font-size: 32px;
       font-weight: 600;
       line-height: 43.71px;
@@ -30,7 +31,7 @@
     }
 
     p {
-      font-family: Manrope;
+      font-family: "Manrope", sans-serif;
       font-size: 16px;
       padding-top: 1rem;
       font-weight: 500;

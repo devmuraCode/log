@@ -1,19 +1,19 @@
-"use client"
-import Container from '@/components/Container'
-import styles from './mainSection.module.scss'
-import { CardMain } from '@/components/CardMain/CardMain'
-import main1 from '@/assets/main1.svg'
-import main2 from '@/assets/main2.svg'
-import main3 from '@/assets/main3.svg'
-import main4 from '@/assets/main4.svg'
-import support from '@/assets/support.svg'
+"use client";
+import Container from "@/components/Container";
+import styles from "./mainSection.module.scss";
+import { CardMain } from "@/components/CardMain/CardMain";
+import main1 from "@/assets/main1.svg";
+import main2 from "@/assets/main2.svg";
+import main3 from "@/assets/main3.svg";
+import main4 from "@/assets/main4.svg";
+import support from "@/assets/support.svg";
 import Image from "next/image";
-import { Button } from '@/components/ui/button'
-import useContactModal from '@/hooks/useContactModal'
-import Link from 'next/link'
+import { Button } from "@/components/ui/button";
+import useContactModal from "@/hooks/useContactModal";
+import Link from "next/link";
 
 export const MainSection = () => {
-   const contactModal = useContactModal();
+  const contactModal = useContactModal();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -55,4 +55,4 @@ export const MainSection = () => {
       </Container>
     </div>
   );
-}
+};
