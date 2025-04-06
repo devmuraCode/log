@@ -1,13 +1,11 @@
 .wrapper {
-  background: linear-gradient(135deg, #001f7a, #0036b3);
-  box-shadow: 11px 10px 0px 4px rgb(49, 112, 249);
-  border-radius: 30px;
-  padding: 8rem 3rem;
+  background: url(../../assets/low.svg) no-repeat center center/cover;
+  padding: 10rem 4rem;
   height: max-content;
   position: relative;
   overflow: hidden;
   color: #fff;
-  width: 70%;
+  width: 83%;
   margin: 4rem auto;
   display: flex;
   align-items: center;
@@ -61,10 +59,8 @@
 .imageWrapper {
   position: absolute;
   top: 50%;
-  right: -1rem;
+  right: 1rem;
   transform: translate(20%, -50%);
-  z-index: 1;
-
   @media (max-width: 1024px) {
     right: 1rem;
     transform: translate(0, -50%);

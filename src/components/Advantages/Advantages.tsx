@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Container from "../Container";
 import styles from "./Advantages.module.scss";
@@ -11,8 +12,13 @@ import advage6 from "@/assets/support.svg";
 import bgVector from "@/assets/bgVector.svg";
 import noun from "@/assets/noun_parcel.svg";
 import noun_world from "@/assets/noun_world.svg";
+import bg from "@/assets/userad.svg";
+import { Button } from "../ui/button";
+import useRegisterModal from "@/hooks/useRegisterModal";
+
 
 export const Advantages = () => {
+    const registerModal = useRegisterModal();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -105,6 +111,40 @@ export const Advantages = () => {
           </div>
         </div>
       </Container>
+
+      <div className={styles.register}>
+        <Container>
+          <div className={styles.register_content}>
+            <h2 className={styles.title}>Преимущества регистрации на сайте</h2>
+            <div className={styles.reg}>
+              <div>
+                <ul>
+                  <li>
+                    Вы получаете личного менеджера, который будет курировать
+                    ваши заказы
+                  </li>
+                  <li>
+                    Групповой чат с менеджером и администратором сайта (на
+                    случай разногласий)
+                  </li>
+                  <li>
+                    Доступ к своим заказам, где вы сможете пересмотреть
+                    информацию о заказах, скачать инвойс и товар-транспортную
+                    накладную, вернуться к оплате заказа
+                  </li>
+                  <li> Возможность всегда уточнить расположения груза </li>
+                </ul>
+              </div>
+              <div className={styles.regbtn}>
+                <Image src={bg} alt="" />
+                <Button onClick={registerModal.onOpen} className="px-6">
+                  Пройти регистрацию
+                </Button>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };

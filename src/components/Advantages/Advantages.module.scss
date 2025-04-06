@@ -285,3 +285,58 @@
     height: auto;
   }
 }
+
+.register {
+  padding: 2rem 2rem;
+  margin: 1rem 0 0 0;
+  background: url(../../assets//regbg.jpg) no-repeat center center/cover;
+  width: 100%;
+  .register_content{
+    padding: 0 5rem;
+  }
+  h2 {
+    position: relative;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45.71px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    gap: 1.3rem;
+    list-style: decimal;
+
+    li {
+      font-family: Manrope;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: #696969;
+      &::marker {
+        color: #2563eb;
+      }
+    }
+  }
+  .reg {
+    display: flex;
+    gap: 2rem;
+  }
+  .regbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
