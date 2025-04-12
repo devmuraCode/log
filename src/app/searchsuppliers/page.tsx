@@ -15,7 +15,7 @@ export default function SearchSuppliers() {
             <SectionTwo/>
             <SectionThree/>
             <SectionFor/>
-            <Section imageSrc={img}/>
+            <Section />
         </div>
     );
 }   

@@ -16,7 +16,7 @@ export default function CisCountries (){
       <DownDocs/>
       <Advantages/>
       <SectionThree/>
-      <Section imageSrc={img}/>
+      <Section />
     </div>
   )
 }

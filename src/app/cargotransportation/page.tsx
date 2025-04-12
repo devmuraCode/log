@@ -19,7 +19,7 @@ export default function TransportationFromChina() {
 			<DownDocs/>
 			<Advantages/>
 			<SectionFive/>
-			<Section imageSrc={img}/>
+			<Section />
 		</div>
 	);
 }

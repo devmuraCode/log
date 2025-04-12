@@ -1,14 +1,11 @@
 "use client";
-import Image from "next/image";
 import Container from "../Container";
 import styles from "./Section.module.scss";
 import useContactModal from "@/hooks/useContactModal";
 
-interface SectionProps {
-  imageSrc: string;
-}
 
-export const Section: React.FC<SectionProps> = ({ imageSrc }) => {
+
+export const Section = () => {
   const contactModal = useContactModal();
   return (
     <Container>
@@ -22,15 +19,7 @@ export const Section: React.FC<SectionProps> = ({ imageSrc }) => {
             Связаться с нами
           </button>
         </div>
-        <div className={styles.imageWrapper}>
-          <Image
-            src={imageSrc}
-            alt="People"
-            className={styles.image}
-            width={500}
-            height={500}
-          />
-        </div>
+        <div className={styles.imageWrapper}></div>
       </div>
     </Container>
   );

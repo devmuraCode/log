@@ -13,7 +13,7 @@ export default function SupplierVerification() {
             <SectionOne/>
             <SectionTwo/>
             <SectionThree/>
-            <Section imageSrc={img}/>
+            <Section />
         </div>
     );
 }

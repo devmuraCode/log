@@ -15,7 +15,7 @@ export default function Marketplace() {
 			<DownDocs/>
 			<Advantages />
 			<SectionThree />
-			<Section imageSrc={img}/>
+			<Section />
 		</div>
 	);
 }

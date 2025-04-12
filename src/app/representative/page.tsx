@@ -14,7 +14,7 @@ export default function Representative() {
             <SectionTwo/>
             <DownDocs/>
             <SectionFor/>
-            <Section imageSrc={img}/>
+            <Section />
         </div>
     )
 }

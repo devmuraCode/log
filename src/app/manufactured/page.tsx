@@ -12,7 +12,7 @@ export default function Manufactured() {
             <SectionOne/>
             <SectionTwo/>
             <SectionFor/>
-            <Section imageSrc={img}/>
+            <Section />
         </div>
     );
 }

@@ -1,10 +1,10 @@
-import { Section } from "@/components/Section/Section";
+import { SectionTwo2 } from "@/components/Section/SectionTwo";
 import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import { Header } from "./sections/Header/Header";
 import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
-import img from "@/assets/home2.svg";
+import img from "@/assets/girl.svg";
 
 export default function About () {
     return (
@@ -13,7 +13,7 @@ export default function About () {
             <SectionOne/>
             <SectionTwo/>
             <SectionThree/>
-            <Section imageSrc={img}/>
+            <SectionTwo2 />
         </div>
     );
 }

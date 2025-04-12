@@ -19,7 +19,7 @@ export default function Transportation() {
             <Advantages/>
             <DownDocs/>
             <SectionFive/>
-            <Section imageSrc={img}/>
+            <Section />
         </div>
     );
 }

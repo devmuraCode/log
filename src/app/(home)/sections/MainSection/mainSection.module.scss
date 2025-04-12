@@ -1,6 +1,6 @@
 .wrapper {
   padding: 7rem 0;
-background: #F6F6F6;
+  background: #f6f6f6;
   h2 {
     font-family: "Manrope", sans-serif;
     font-size: 32px;
@@ -10,8 +10,8 @@ background: #F6F6F6;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  .button:hover{
-    background: #FF6600;
+  .button:hover {
+    background: #ff6600;
   }
   .cardGroup {
     display: flex;
@@ -33,10 +33,11 @@ background: #F6F6F6;
     box-shadow: 14px 12px 0px -1px rgba(37, 99, 235, 1);
     border-radius: 40px;
     display: flex;
+
     width: 80%;
     margin: 0 auto;
     justify-content: center;
-    background: white;
+    background: #f6f6f6;
     align-items: center;
     padding: 2rem 70px;
     margin-top: 2rem;
@@ -63,7 +64,7 @@ background: #F6F6F6;
       display: flex;
       justify-content: space-between;
       align-items: center;
-background: white;
+      background: #f6f6f6;
       @media (max-width: 768px) {
         flex-direction: column; /* Вертикальное расположение элементов */
         gap: 1rem; /* Добавляем расстояние между элементами */

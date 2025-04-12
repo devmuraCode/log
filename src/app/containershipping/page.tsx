@@ -18,7 +18,7 @@ export default function ContainerShipping () {
             <DownDocs/>
             <Advantages/>
             <SectionFor/>
-            <Section imageSrc={img}/>
+            <Section/>
         </div>
     )
 }
