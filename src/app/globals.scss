@@ -7,7 +7,7 @@ body {
   background: #f9fafe;
   width: 100%;
   height: max-content;
-   user-select: none;
+  user-select: none;
 }
 
 @layer base {
@@ -69,7 +69,6 @@ body.modal-open {
   overflow: hidden;
   padding-right: 15px;
 }
-
 
 @layer base {
   * {

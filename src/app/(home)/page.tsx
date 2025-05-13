@@ -8,6 +8,7 @@ import { TypesTransportationSection } from "./sections/TypesTransportationSectio
 import { ReviewSection } from "./sections/ReviewSection/ReviewSection";
 import { Section } from "@/components/Section/Section";
 import { Sectiono } from "./sections/Section/Section";
+import { SectionDoc } from "./sections/SectionDoc/SectionDoc";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <CargoSection />
       <LegasySection />
       <Sectiono />
+      <SectionDoc/>
       <Advantages />
       <TypesTransportationSection />
       {/* <ReviewSection/> */}

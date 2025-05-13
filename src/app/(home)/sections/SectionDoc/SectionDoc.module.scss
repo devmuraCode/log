@@ -1,0 +1,37 @@
+.wrapper {
+  .big_box {
+    background: url(../../../../assets/sectiondoc.svg) no-repeat center;
+    padding: 2.5rem 0;
+    
+    .box {
+      display: flex;
+      padding: 0 4rem !important;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap; 
+
+      @media (max-width: 768px) {
+        padding: 0 2rem; 
+        gap: 2rem; 
+      }
+    }
+
+    p {
+      font-family: Manrope;
+      font-weight: 600;
+      font-size: 20px;
+      width: 462px;
+      line-height: 100%;
+      letter-spacing: 2%;
+      color: #000000;
+      
+      @media (max-width: 768px) {
+        font-size: 16px; 
+        width: 100%; 
+        text-align: center; 
+      }
+    }
+  }
+}
+
