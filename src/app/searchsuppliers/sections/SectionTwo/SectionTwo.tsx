@@ -1,20 +1,25 @@
 import Container from "@/components/Container";
 import styles from "./SectionTwo.module.scss";
 import {
-	Table,
-	TableBody,
-	TableCell,
-	TableHead,
-	TableHeader,
-	TableRow,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from "@/components/ui/table";
 
 export const SectionTwo = () => {
-	return (
+  return (
     <div className={styles.wrapper}>
       <Container>
-        <div className={styles.title}>
-          <h1>Поиск поставщиков в Китае: Цены, сроки, гарантии</h1>
+        <div className={styles.advantages_title_catd}>
+          <div className={styles.general_title}>
+            <div className={styles.corner}></div>
+            <h1 className={styles.h1}>
+              Поиск поставщиков в Китае: Цены, сроки, гарантии
+            </h1>
+          </div>
         </div>
         <div className={styles.table_block}>
           <Table>

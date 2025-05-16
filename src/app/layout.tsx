@@ -9,7 +9,7 @@ import logo from '@/assets/logo.svg'
 const font = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Logistics",
+  title: "LE",
   icons: {
     icon: logo.src
   },

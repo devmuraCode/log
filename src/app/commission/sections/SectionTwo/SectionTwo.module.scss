@@ -106,12 +106,16 @@
   }
 
   .text {
-    background: white;
+    background: #F6F6F6;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     width: 70%;
     margin: 0 auto;
+    main{
+      color: #2563eb;
+      display: inline;
+    }
   }
 
   @media (max-width: 1200px) {

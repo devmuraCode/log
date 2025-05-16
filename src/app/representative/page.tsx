@@ -6,6 +6,7 @@ import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import img from '@/assets/home.svg'
+import { Section1 } from "../commission/sections/Section/Section1";
 
 export default function Representative() {
     return (
@@ -13,6 +14,7 @@ export default function Representative() {
             <SectionOne/>
             <SectionTwo/>
             <DownDocs/>
+            <Section1/>
             <SectionFor/>
             <Section />
         </div>

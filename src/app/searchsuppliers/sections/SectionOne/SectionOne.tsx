@@ -10,38 +10,45 @@ import mynaui_cart from "@/assets/mynaui_cart.svg";
 
 export const SectionOne = () => {
   return (
-		<div className={styles.wrapper}>
-			<Container>
-				<div>
-					<h1 className={styles.h1}>Кому полезны услуги по поиску поставщиков в Китае</h1>
-					<div className={styles.cardGroup}>
-						<CardMain
-							description="Начинающим предпринимателям"
-							image={outline_user}
-						/>
-						<CardMain
-							description="Давно занимающийся бизнесом"
-							image={solar_case}
-						/>
-						<CardMain
-							description="Планирующим начать сотрудничество с Поднебесной"
-							image={handshake}
-						/>
-						<CardMain
-							description="Предпринимателям для расширения существующего бизнеса"
-							image={huge}
-						/>
-						<CardMain
-							description="Желающим попробовать себя в новой нише"
-							image={arrow}
-						/>
-						<CardMain
-							description="Находящимся в поиске фабрики в Китае по необходимому направлению"
-							image={mynaui_cart}
-						/>
-					</div>
-				</div>
-			</Container>
-		</div>
-	);
-}
+    <div className={styles.wrapper}>
+      <Container>
+        <div>
+          <div className={styles.advantages_title_catd}>
+            <div className={styles.general_title}>
+              <div className={styles.corner}></div>
+              <h1 className={styles.h1}>
+                Кому полезны услуги по поиску поставщиков в Китае
+              </h1>
+            </div>
+          </div>
+          <div className={styles.cardGroup}>
+            <CardMain
+              description="Начинающим предпринимателям"
+              image={outline_user}
+            />
+            <CardMain
+              description="Давно занимающийся бизнесом"
+              image={solar_case}
+            />
+            <CardMain
+              description="Планирующим начать сотрудничество с Поднебесной"
+              image={handshake}
+            />
+            <CardMain
+              description="Предпринимателям для расширения существующего бизнеса"
+              image={huge}
+            />
+            <CardMain
+              description="Желающим попробовать себя в новой нише"
+              image={arrow}
+            />
+            <CardMain
+              description="Находящимся в поиске фабрики в Китае по необходимому направлению"
+              image={mynaui_cart}
+            />
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
+};

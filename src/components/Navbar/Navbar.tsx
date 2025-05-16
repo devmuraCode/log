@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
                                       : ""
                                   }
                                 >
-                                  Перевозка товаров
+                                  Перевозка грузов
                                 </Link>
                               </DropdownMenuItem>
                             </div>
@@ -130,7 +130,7 @@ const Navbar: React.FC = () => {
                                       : ""
                                   }
                                 >
-                                  Доставка сборных товаров
+                                  Доставка сборных грузов
                                 </Link>
                               </DropdownMenuItem>
                               <DropdownMenuItem asChild>
