@@ -3,12 +3,12 @@ import styles from "./SectionTwo.module.scss";
 import Image from "next/image";
 import business from "@/assets/business.svg";
 import ion_build from "@/assets/ion_build.svg";
-import arcticons_translator from "@/assets/arcticons_translator.svg";
+import arcticons_translator from "@/assets/rep.svg";
 import solar_documents from "@/assets/solar_documents.svg";
 import svgrepo from "@/assets/svgrepo.svg";
 
 export const SectionTwo = () => {
-	return (
+  return (
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.content}>

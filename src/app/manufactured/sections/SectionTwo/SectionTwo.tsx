@@ -10,14 +10,21 @@ import paper from "@/assets/paper.svg";
 import icon from "@/assets/icon-park-outline_.svg";
 import boxes from "@/assets/boxes.svg";
 import support from "@/assets/support.svg";
-import gra from '@/assets/garizont.svg'
+import gra from "@/assets/garizont.svg";
 export const SectionTwo = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <h1>Процесс организации производства</h1>
+        <div className={styles.advantages_title_catd}>
+          <div>
+            <div className={styles.general_title}>
+              <div className={styles.corner}></div>
+
+              <h1>Процесс организации производства</h1>
+            </div>
+          </div>
+        </div>
         <div className={styles.gridWrapper}>
-          <Image src={gra} alt="boxes" className={styles.gra} />
           <div className={styles.grid}>
             <div className={styles.step}>
               <div className={styles.icon}>
@@ -83,6 +90,14 @@ export const SectionTwo = () => {
                 <h2>9</h2>
               </div>
               <p>Обслуживание и консультационная поддержка</p>
+            </div>
+            <div className={styles.advantages_desc_catd}>
+              <p>
+                Мы сопровождаем клиента на каждом этапе — от анализа
+                технического <br /> задания до запуска производства и последующего
+                обслуживания. <br /> Наша цель — обеспечить полный контроль качества и
+                надежность на <br /> всех этапах сотрудничества.
+              </p>
             </div>
           </div>
         </div>
