@@ -1,112 +1,116 @@
 .wrapper {
-	padding: 7rem 0;
+  padding: 7rem 0;
+  .title {
+    border-radius: 15px;
+    background: rgba(37, 99, 235, 0.1);
+    text-align: center;
+    padding: 2rem 0;
+	margin: 0 0 1rem 0;
+    h1 {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43.71px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
 
-	h1 {
-		font-family: Manrope;
-		font-size: 32px;
-		font-weight: 600;
-		line-height: 43.71px;
-		text-align: center;
-		text-underline-position: from-font;
-		text-decoration-skip-ink: none;
-		margin-bottom: 2rem;
-		padding: 0 200px;
+      @media (max-width: 1024px) {
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 100px;
+      }
 
-		@media (max-width: 1024px) {
-			font-size: 28px;
-			line-height: 40px;
-			padding: 0 100px;
-		}
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0 50px;
+      }
 
-		@media (max-width: 768px) {
-			font-size: 24px;
-			line-height: 36px;
-			padding: 0 50px;
-		}
+      @media (max-width: 480px) {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 20px;
+      }
+    }
+  }
 
-		@media (max-width: 480px) {
-			font-size: 20px;
-			line-height: 30px;
-			padding: 0 20px;
-		}
-	}
+  .cardGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 
-	.cardGroup {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
 
-		@media (max-width: 1024px) {
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1.5rem;
-		}
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
 
-		@media (max-width: 768px) {
-			grid-template-columns: 1fr;
-			gap: 1rem;
-		}
-	}
+  .support_card {
+    height: 150px;
+    border: 1px solid rgba(37, 99, 235, 1);
+    box-shadow: 14px 12px 0px -1px rgba(37, 99, 235, 1);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
 
-	.support_card {
-		height: 150px;
-		border: 1px solid rgba(37, 99, 235, 1);
-		box-shadow: 14px 12px 0px -1px rgba(37, 99, 235, 1);
-		border-radius: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 70px;
+    @media (max-width: 1024px) {
+      height: 140px;
+      padding: 0 50px;
+    }
 
-		@media (max-width: 1024px) {
-			height: 140px;
-			padding: 0 50px;
-		}
+    @media (max-width: 768px) {
+      height: 130px;
+      padding: 0 30px;
+    }
 
-		@media (max-width: 768px) {
-			height: 130px;
-			padding: 0 30px;
-		}
+    @media (max-width: 480px) {
+      height: 120px;
+      padding: 0 20px;
+    }
 
-		@media (max-width: 480px) {
-			height: 120px;
-			padding: 0 20px;
-		}
+    h3 {
+      font-family: Manrope;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32.78px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
 
-		h3 {
-			font-family: Manrope;
-			font-size: 24px;
-			font-weight: 600;
-			line-height: 32.78px;
-			text-align: center;
-			text-underline-position: from-font;
-			text-decoration-skip-ink: none;
+      @media (max-width: 1024px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
 
-			@media (max-width: 1024px) {
-				font-size: 22px;
-				line-height: 30px;
-			}
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
 
-			@media (max-width: 768px) {
-				font-size: 20px;
-				line-height: 28px;
-			}
+      @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
 
-			@media (max-width: 480px) {
-				font-size: 18px;
-				line-height: 26px;
-			}
-		}
+    .content_card {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-		.content_card {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			@media (max-width: 768px) {
-				flex-direction: column;
-				gap: 1rem;
-			}
-		}
-	}
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
 }
