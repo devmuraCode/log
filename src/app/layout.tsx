@@ -3,7 +3,7 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { Footer } from "@/components/Footer/Footer";
-import { RegisterModa } from "@/components/Modal/RegisterModa";
+import { RegisterModal } from "@/components/Modal/RegisterModa";
 import { ContactModal } from "@/components/Modal/ContactModal";
 import logo from '@/assets/logo.svg'
 const font = Manrope({ subsets: ["latin"] });
@@ -26,7 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <RegisterModa />
+        <RegisterModal />
         <ContactModal />
       </body>
     </html>

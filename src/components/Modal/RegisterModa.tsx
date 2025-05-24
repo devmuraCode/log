@@ -7,106 +7,128 @@ import Modal from "./Modal";
 import { useState } from "react";
 
 type Inputs = {
-	email: string;
-	password: string;
+  email: string;
+  password: string;
 };
 
-export const RegisterModa = () => {
-	const registerModal = useRegisterModal();
-	const [isLoading, setIsLoading] = useState(false);
-	const {
-		register,
-		handleSubmit,
-		formState: { errors },
-	} = useForm<Inputs>();
+export const RegisterModal = () => {
+  const registerModal = useRegisterModal();
+  const [isLoading, setIsLoading] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
 
-	const onSubmit = (data: Inputs) => {
-		console.log(data);
-	};
-	const bodyContent = (
-		<div className="flex flex-col gap-4">
-			<Heading title="Вход" />
-			<Input
-				id="email"
-				name="email"
-				label="email"
-				disabled={isLoading}
-				// @ts-ignore
-				register={register}
-				errors={errors}
-				required
-			/>
-			<Input
-				id="password"
-				name="password"
-				label="Пароль"
-				type="password"
-				disabled={isLoading}
-				// @ts-ignore
-				register={register}
-				errors={errors}
-				required
-			/>
-		</div>
-	);
+  const onSubmit = (data: Inputs) => {
+    console.log(data);
+  };
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      <Heading title="Регистрация" />
+      <Input
+        id="name"
+        name="name"
+        label="Имя и фамилия"
+        disabled={isLoading}
+        // @ts-ignore
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="email"
+        name="email"
+        label="Почта"
+        type="text"
+        disabled={isLoading}
+        // @ts-ignore
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="password"
+        name="password"
+        label="Пароль"
+        type="password"
+        disabled={isLoading}
+        // @ts-ignore
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
+        id="password"
+        name="password"
+        label="Подтвердите пароль"
+        type="password"
+        disabled={isLoading}
+        // @ts-ignore
+        register={register}
+        errors={errors}
+        required
+      />
+    </div>
+  );
 
-	const footerContent = (
-		<div className="flex flex-col gap-4 mt-3">
-			<hr />
-			<div
-				className="
+  const footerContent = (
+    <div className="flex flex-col gap-4 mt-3">
+      <hr />
+      <div
+        className="
           text-neutral-500 
           text-center 
           mt-4 
           font-light
         "
-			>
-				<p>
-					У вас уже есть аккаунт?
-					<span
-						onClick={() => {
-							registerModal.onClose();
-						}}
-						className="
+      >
+        <p>
+          У вас уже есть аккаунт?
+          <span
+            onClick={() => {
+              registerModal.onClose();
+            }}
+            className="
               text-neutral-800
               cursor-pointer 
               hover:underline
             "
-					>
-						{" "}
-						Войти
-					</span>
-				</p>
-				<p>
-					Забыли пароль?
-					<span
-						onClick={() => {
-							registerModal.onClose();
-						}}
-						className="
+          >
+            {" "}
+            Войти
+          </span>
+        </p>
+        <p>
+          Забыли пароль?
+          <span
+            onClick={() => {
+              registerModal.onClose();
+            }}
+            className="
               text-neutral-800
               cursor-pointer 
               hover:underline
             "
-					>
-						{" "}
-						Войти
-					</span>
-				</p>
-			</div>
-		</div>
-	);
+          >
+            {" "}
+            Войти
+          </span>
+        </p>
+      </div>
+    </div>
+  );
 
-	return (
-		<div>
-			<Modal
-				isOpen={registerModal.isOpen}
-				onClose={registerModal.onClose}
-				onSubmit={handleSubmit(onSubmit)}
-				body={bodyContent}
-				footer={footerContent}
-				title="Регистрация"
-			/>
-		</div>
-	);
+  return (
+    <div>
+      <Modal
+        isOpen={registerModal.isOpen}
+        onClose={registerModal.onClose}
+        onSubmit={handleSubmit(onSubmit)}
+        body={bodyContent}
+        footer={footerContent}
+        title="Регистрация"
+      />
+    </div>
+  );
 };

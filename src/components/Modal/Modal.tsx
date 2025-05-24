@@ -66,18 +66,7 @@ const Modal: React.FC<ModalProps> = ({
         >
           <div className="text-center">{body}</div>
 
-          <div className="mt-4 flex justify-center items-center">
-            <input
-              type="checkbox"
-              id="remember"
-              checked={remember}
-              onChange={handleCheckboxChange}
-              className="mr-2"
-            />
-            <label htmlFor="remember" className="text-gray-700 ">
-              Запомнить на этом устройстве
-            </label>
-          </div>
+      
 
           <div className="mt-4">
             <button
